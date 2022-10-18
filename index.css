@@ -1115,18 +1115,15 @@ body::-webkit-scrollbar-track{
     .contact-container{
         margin-top: 0%;
         margin-left: 6%;
-        min-width: 95%;
-    }
-    .contact-info:nth-child(1){
-        width: 80%;
+        min-width: 100%;
     }
     .sl-group{
         width: 100%;
-        margin-left: 0%;
+        margin-left: 2%;
         margin-top: 0%;
     }
     .sl-text{
-        letter-spacing: 1px;
+        min-width: fit-content;
     }
     .sl-icon{
         padding: 10px;
@@ -1166,25 +1163,6 @@ body::-webkit-scrollbar-track{
 @media(max-width: 550px){
     .see-more-btn{
         display: none;
-    }
-}
-@media(max-width: 400px){
-    .up-btn{
-        margin-top: 20px;
-        margin-left: 10%;
-    }
-}
-@media(max-width: 360px){
-    .sl-group{
-        width: 100%;
-    }
-}
-@media(max-width: 300px){
-    .sl-group{
-        margin-left: 1%;
-    }
-    .sl-text{
-        font-size: 30px;
     }
 }
 @media(max-height: 360px){

@@ -789,7 +789,7 @@ body::-webkit-scrollbar-track{
     .contact-container{
         margin-top: 0%;
         margin-left: 6%;
-        min-width: 95%;
+        min-width: 100%;
     }
     .sl-group{
         width: 100%;
