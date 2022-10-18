@@ -189,14 +189,11 @@ body::-webkit-scrollbar-track{
     top: 90%;
     padding-left: 10%;
     display: flex;
-    gap: 35px;
+    gap: 55px;
 }
 .mi-icon svg{
     fill: white;
-}
-.mi-icon svg{
-    fill: white;
-    margin-left: 4%;
+    margin-left: 10%;
 }
 .sec1{
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)), url(images/white-design.jpg);
