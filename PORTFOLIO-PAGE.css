@@ -186,10 +186,14 @@ body::-webkit-scrollbar-track{
     top: 90%;
     padding-left: 10%;
     display: flex;
-    gap: 30px;
+    gap: 35px;
 }
 .mi-icon svg{
     fill: white;
+}
+.mi-icon svg{
+    fill: white;
+    margin-left: 4%;
 }
 .portfolio-section{
     min-height: 65vh;
@@ -962,7 +966,7 @@ body::-webkit-scrollbar-track{
         width: 80%;
     }
     .sl-group{
-        width: 80%;
+        width: 100%;
         margin-left: 0%;
         margin-top: 2%;
     }
