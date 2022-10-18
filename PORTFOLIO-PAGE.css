@@ -142,7 +142,7 @@ body::-webkit-scrollbar-track{
     height: 0;
     overflow: hidden;
     top: 0;
-    background: rgba(47, 54, 64, 0.808);
+    background: rgba(47, 54, 64, 0.973);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: (6px);
     transition: 0.3s;
@@ -165,7 +165,7 @@ body::-webkit-scrollbar-track{
 }
 .menu-links{
     position: absolute;
-    top: 35%;
+    top: 32%;
     width: 90%;
     margin-left: 5%;
     line-height: 50px;
@@ -186,7 +186,7 @@ body::-webkit-scrollbar-track{
     top: 90%;
     padding-left: 10%;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 .mi-icon svg{
     fill: white;
