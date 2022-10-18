@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOFA MPAMA - PORTFOLIO</title>
+    <link rel="stylesheet" href="PORTFOLIO-PAGE.css">
+    <script src="SCRIPT.js"></script>
+</head>
+<body>
+    <div class="nav-header">
+        <div class="logo-container">
+            <span>b</span> 
+            <span>o</span>
+            <span>f</span>
+            <span>a</span>
+        </div>
+        <div class="nav-list">
+            <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="ABOUTPAGE.html">about</a></li>
+                    <li><a href="PORTFOLIO-PAGE.html">portfolio</a></li>
+            </ul>
+        </div>
+       <div class="contact-btn-container">
+        <div class="contact-btn">
+            <a href="#contact-link">contact me</a>
+        </div>
+        <div class="contact-btn" onclick="openMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+        </div>
+       </div>
+    </div>
+    <div class="menu-box" id="menu">
+            <div class="close-btn" onclick="closeMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html">home</a></li>
+                <li><a href="ABOUTPAGE.html">about me</a></li>
+                <li><a href="PORTFOLIO-PAGE.html">portfolio</a></li>
+                <li><a href="#contact-link" onclick="closeMenu()">contact me</a></li>
+            </div>
+            <div class="menu-icons">
+                <div class="mi-icon"><a href="https://www.facebook.com/bofa.mpama.5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a></div>
+                <div class="mi-icon"><a href="https://www.twitter.com/bofa_mpama"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></div>
+                <div class="mi-icon"><a href="https://www.github.com/BofaMpama"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></div>
+                <div class="mi-icon"><a href="https://www.linkedin.com/in/bofa-mpama-1b3115251"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a></div>
+            </div>
+        </div>
+        <div class="portfolio-section">
+            <div class="portfolio-header">my portfolio</div>
+            <div class="portfolio-text">take a peek into some of my finest projects and designs.</div>
+        </div>
+        <div class="sec1" id="sec1">
+            <div class="section-header sec1-header">front-end developing</div>
+            <div class="section-text st1">these are a few pictures of the beautiful and interactive front-end webpages that i create. click any of the buttons below to view.</div>
+            <div class="cc-box-group">
+            <div class="cc-box wb1" onclick="openPicture1a()"><p>beach finderz</p></a></div>
+            <div class="cc-box wb2" onclick="openPicture2a()">black atom</a></div>
+            <div class="cc-box wb3" onclick="openPicture3a()">raindrop</a></div>
+            </div>
+        </div>
+    <div class="sec1-picture-group" id="picture1a">
+            <div class="sec1-picture-close-btn" onclick="closePicture1a()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+            </div>
+            <a href="images/BEACHFINDERZ-WEBPAGE-PHOTO.png"><img src="images/BEACHFINDERZ-WEBPAGE-PHOTO.png" alt=""></a>
+            <div class="sec1-picture-text">
+                <b>Beach Finderz</b>
+                <p>A website designed to help you find the best place for a memorable vacation.</p>
+            </div>
+        </div>
+        <div class="sec1-picture-group" id="picture2a">
+                <div class="sec1-picture-close-btn" onclick="closePicture2a()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+                </div>
+                <a href="images/BLACKATOM-WEBPAGE-PHOTO.png"><img src="images/BLACKATOM-WEBPAGE-PHOTO.png"></a>
+                <div class="sec1-picture-text">
+                        <b>Blackatom</b>
+                        <p>Built mainly to help reshape the world's perspective towards defining the word 'Black'.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec1-picture-group" id="picture3a">
+                    <div class="sec1-picture-close-btn" onclick="closePicture3a()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+                    </div>
+                    <a href="images/RAINDROP-WEBPAGE-PHOTO.png"><img src="images/RAINDROP-WEBPAGE-PHOTO.png"></a>
+                    <div class="sec1-picture-text">
+                            <b>Raindrop</b>
+                            <p>A website built for writers who often search for inspiration.</p>
+                        </div>
+                    </div>
+                </div>
+    <div class="section sec2">
+        <div class="scroll-reveal section-header sec2-header">graphics design</div>
+        <div class="section-text sec2-text">elegant and stylish. i could make even better for you. click any of the buttons below to view some of my graphics designs.</div>
+        <div class="cc-box-group">
+        <div class="sec2-box" onclick="openPicture1()">flyer 1</div>
+        <div class="sec2-box" onclick="openPicture2()">flyer 2</div>
+        <div class="sec2-box" onclick="openPicture3()">flyer 3</div>
+        <div class="sec2-box" onclick="openPicture4()">flyer 4</div>
+    </div>
+    </div>
+        <div class="sec2-picture-group" id="picture1">
+            <div class="sec2-picture-close-btn" onclick="closePicture1()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+            </div>
+            <a href="images/AFRICAN-LADY.png"><img src="images/AFRICAN-LADY.png"></a>
+            <div class="sec2-picture-text">click on the picture to display in full screen.</div>
+        </div>
+        <div class="sec2-picture-group" id="picture2">
+                <div class="sec2-picture-close-btn" onclick="closePicture2()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+                </div>
+                <a href="images/CALABAR-BEACH.png"><img src="images/CALABAR-BEACH.png"></a>
+                <div class="sec2-picture-text">click on the picture to display in full screen.</div>
+            </div>
+            <div class="sec2-picture-group" id="picture3">
+                    <div class="sec2-picture-close-btn" onclick="closePicture3()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+                    </div>
+                    <a href="images/CATWALKER.png"><img src="images/CATWALKER.png"></a>
+                    <div class="sec2-picture-text">click on the picture to display in full screen.</div>
+                </div>
+                <div class="sec2-picture-group" id="picture4">
+                        <div class="sec2-picture-close-btn" onclick="closePicture4()">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M376.6 427.5c11.31 13.58 9.484 33.75-4.094 45.06c-5.984 4.984-13.25 7.422-20.47 7.422c-9.172 0-18.27-3.922-24.59-11.52L192 305.1l-135.4 162.5c-6.328 7.594-15.42 11.52-24.59 11.52c-7.219 0-14.48-2.438-20.47-7.422c-13.58-11.31-15.41-31.48-4.094-45.06l142.9-171.5L7.422 84.5C-3.891 70.92-2.063 50.75 11.52 39.44c13.56-11.34 33.73-9.516 45.06 4.094L192 206l135.4-162.5c11.3-13.58 31.48-15.42 45.06-4.094c13.58 11.31 15.41 31.48 4.094 45.06l-142.9 171.5L376.6 427.5z"/></svg>
+                        </div>
+                        <a href="images/MISS AFRICANA.png"><img src="images/MISS AFRICANA.png"></a>
+                        <div class="sec2-picture-text">click on the picture to display in full screen.</div>
+                    </div>
+<div class="section sec3">
+    <div class="scroll-reveal section-header">content creation</div>
+    <div class="section-text">never heard of a web developer gifted in writing? now you know. click any of the boxes below to see some of my best work.</div>
+<div class="cc-box-group group3">
+    <div class="cc-box"><a href="documents/MY POEMS.docx"><img src="images/poem.png">poems</a></div>
+    <div class="cc-box"><a href="documents/SHORT STORY - A NEW BEGINNING.docx"><img src="images/story.png">short stories</a></div>
+    <div class="cc-box"><a href="documents/BLOG POST - CHURCH CLOTHES; YOU'VE BEEN DOING IT WRONG.docx"><img src="images/blog.png">blog posts</a></div>
+</div>
+</div>
+<div class="sec4" id="contact-link">
+    <div class="footer-container">
+        <div class="footer-links">
+            <ul>
+                <span>links</span>
+                <li><a href="index.html">home</a></li>
+                <li><a href="ABOUTPAGE.html">about</a></li>
+                <li><a href="PORTFOLIO-PAGE.html">portfolio</a></li>
+            </ul>
+        </div>
+        <div class="contact-container">
+                <div class="contact-header">thanks for visiting my portfolio website. wanna stay in touch?</div>
+                <div class="contact-group">
+                    <div class="contact-info"><?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g transform="translate(1 1)">
+                            <g>
+                                <g>
+                                    <path d="M254.948,39.96c5.973,4.267,11.093,5.12,26.453,5.973c45.227,2.56,73.387,12.8,104.96,35.84
+                                        c39.253,28.16,64,68.267,72.533,117.76c2.56,12.8,3.413,23.893,4.267,40.107c0.853,11.947,0.853,16.213,3.413,20.48
+                                        c4.267,6.827,11.093,11.093,18.773,11.947c0.853,0,1.707,0,2.56,0c6.827,0,13.653-3.413,17.067-9.387
+                                        c5.973-6.827,5.973-12.8,5.12-26.453c-1.707-41.813-10.24-80.213-27.307-112.64c-11.947-23.04-23.04-38.4-43.52-58.027
+                                        c-21.333-20.48-37.547-32.427-63.147-44.373c-26.453-12.8-45.227-17.067-73.387-20.48C297.615-0.147,287.375-1,279.695-1
+                                        c-13.653,0-19.627,0-25.6,5.973c-5.12,4.267-7.68,11.093-7.68,17.92S249.828,35.693,254.948,39.96z M265.188,17.773
+                                        c0.853-0.853,1.707-1.707,7.68-1.707c1.707,0,3.413,0,5.973,0c6.827,0,17.067,0.853,22.187,1.707
+                                        c26.453,3.413,43.52,6.827,68.267,18.773c23.893,11.947,38.4,22.187,58.88,41.813c18.773,18.773,29.013,32.427,40.107,53.76
+                                        c15.36,30.72,23.893,65.707,25.6,105.813c0,12.8,0,13.653-1.707,14.507c-0.853,1.707-3.413,1.707-5.12,1.707
+                                        s-4.267-0.853-5.12-2.56c-0.853-0.853-0.853-2.56-1.707-12.8c-0.853-17.067-1.707-29.013-4.267-42.667
+                                        c-10.24-54.613-36.693-98.133-79.36-128.853c-34.133-24.747-65.707-35.84-114.347-38.4c-14.507-0.853-15.36-1.707-17.067-2.56
+                                        c-0.853-0.853-1.707-2.56-1.707-4.267S264.335,18.627,265.188,17.773z"/>
+                                    <path d="M394.895,223.427c0,11.947,0.853,23.04,12.8,29.013c3.413,1.707,7.68,2.56,11.947,2.56c3.413,0,7.68-0.853,10.24-2.56
+                                        c4.267-1.707,9.387-7.68,11.093-11.947c2.56-5.973,1.707-28.16,0.853-34.133c-3.413-27.307-12.8-52.907-27.307-74.24
+                                        c-27.307-39.253-67.413-62.293-119.467-69.973c-17.92-2.56-30.72-3.413-38.4,8.533c-5.973,8.533-5.12,20.48,1.707,28.16
+                                        c5.973,6.827,13.653,7.68,21.333,8.533c20.48,1.707,43.52,8.533,58.88,17.067c17.92,10.24,32.427,25.6,42.667,43.52
+                                        C389.775,184.173,394.895,203.8,394.895,223.427z M347.961,109.933c-17.92-10.24-43.52-17.067-68.267-18.773
+                                        c-6.827,0-8.533-1.707-9.387-2.56c-1.707-2.56-1.707-5.12,0-7.68c1.707-1.707,2.56-3.413,22.187-0.853
+                                        c47.787,6.827,83.627,27.307,107.52,62.293c13.653,18.773,22.187,41.813,24.747,66.56c1.707,8.533,0.853,23.04,0.853,25.6
+                                        c-0.853,0.853-2.56,2.56-3.413,3.413c-0.853,0-5.12,0-5.973-0.853c-1.707-0.853-3.413-1.707-3.413-13.653
+                                        c0-22.187-5.973-46.08-16.213-64C385.508,138.947,368.441,121.88,347.961,109.933z"/>
+                                    <path d="M347.961,150.893c-11.093-11.093-24.747-17.92-42.667-21.333c-4.267-0.853-11.093-1.707-15.36-1.707
+                                        c-6.827,0-10.24,0-15.36,2.56c-5.973,3.413-10.24,9.387-11.947,16.213c-1.707,6.827,0.853,14.507,5.12,19.627
+                                        c5.973,5.973,11.093,6.827,22.187,8.533c18.773,1.707,29.013,8.533,34.987,20.48c3.413,5.973,5.12,12.8,5.973,23.04
+                                        c0.853,8.533,2.56,14.507,9.387,19.627c4.267,2.56,9.387,4.267,14.507,4.267c5.973,0,11.093-1.707,13.653-4.267
+                                        c8.533-7.68,9.387-17.92,6.827-32.427C371.001,181.613,363.321,164.547,347.961,150.893z M358.201,224.28
+                                        c-1.707,1.707-5.973,1.707-8.533,0c-0.853-0.853-1.707-0.853-2.56-7.68c-0.853-11.093-2.56-19.627-6.827-28.16
+                                        c-8.533-17.92-23.893-28.16-47.787-30.72c-9.387-1.707-10.24-1.707-11.093-3.413c-0.853-1.707-0.853-3.413-0.853-5.12
+                                        c0.853-1.707,1.707-3.413,3.413-4.267c0.853-0.853,0.853-0.853,2.56-0.853c0.853,0,2.56,0,3.413,0
+                                        c4.267,0.853,10.24,0.853,12.8,1.707c14.507,3.413,25.6,8.533,34.987,17.067c11.947,11.093,18.773,24.747,21.333,44.373
+                                        C361.615,220.867,359.908,222.573,358.201,224.28z"/>
+                                    <path d="M501.561,387.267c-5.973-6.827-42.667-35.84-58.88-46.933c-12.8-8.533-33.28-20.48-42.667-25.6
+                                        c-13.653-6.827-28.16-7.68-41.813-3.413c-2.56,0.853-5.12,1.707-6.827,2.56c-6.827,3.413-11.947,9.387-22.187,21.333
+                                        c-10.24,12.8-12.8,15.36-12.8,15.36c-0.853,0.853-2.56,1.707-4.267,2.56h-0.853c-7.68,4.267-20.48,0.853-41.813-9.387
+                                        c-17.92-8.533-34.133-19.627-52.053-35.84c-15.36-13.653-30.72-31.573-39.253-45.227c-11.947-19.627-19.627-41.813-19.627-52.053
+                                        c0-4.267,1.707-10.24,3.413-12.8l0.853-0.853c0,0,0.853-0.853,1.707-1.707c3.413-2.56,7.68-5.973,11.947-9.387
+                                        c19.627-15.36,25.6-21.333,29.013-33.28c3.413-11.093,0.853-23.893-8.533-41.813c-13.653-26.453-58.027-82.773-75.947-94.72
+                                        c-2.56-2.56-7.68-5.12-11.093-5.973c-7.68-3.413-17.92-4.267-24.747-2.56c-9.387,1.707-19.627,7.68-41.813,24.747
+                                        c-12.8,8.533-31.573,26.453-36.693,34.987c-11.947,20.48-8.533,37.547,1.707,67.413c10.24,28.16,23.893,56.32,40.107,84.48
+                                        l0.853,1.707c3.413,5.12,6.827,11.093,10.24,16.213l0.853,1.707c3.413,5.12,6.827,11.093,10.24,16.213l5.973,8.533
+                                        c2.56,3.413,4.267,5.973,6.827,9.387c4.267,5.973,9.387,11.947,13.653,17.92c49.493,64,106.667,116.053,174.08,157.867
+                                        l2.56,1.707c9.387,5.973,19.627,11.947,30.72,17.92l4.267,2.56c11.093,5.973,21.333,11.093,32.427,16.213l3.413,1.707
+                                        c12.8,5.973,23.893,11.093,34.987,15.36c13.653,5.12,19.627,6.827,29.013,6.827c1.707,0,3.413,0,5.12,0
+                                        c5.973,0,11.947-0.853,17.067-2.56c7.68-2.56,14.507-5.973,23.04-11.947c0.853-0.853,2.56-2.56,4.267-3.413
+                                        c1.707-1.707,4.267-3.413,5.973-5.12c9.387-7.68,20.48-19.627,29.013-31.573c4.267-5.973,10.24-15.36,13.653-23.04
+                                        c3.413-6.827,4.267-14.507,4.267-21.333C510.948,402.627,507.535,394.093,501.561,387.267z M491.321,427.373
+                                        c-1.707,5.12-5.973,11.947-11.947,19.627c-7.68,11.093-17.92,21.333-26.453,29.013c-1.707,1.707-3.413,3.413-5.12,4.267
+                                        c-1.707,0.853-2.56,1.707-4.267,2.56c-6.827,5.12-12.8,7.68-17.92,9.387c-4.267,0.853-8.533,1.707-12.8,1.707
+                                        c-9.387,0-12.8,0-26.453-5.12c-10.24-5.12-21.333-9.387-34.133-15.36l-3.413-1.707c-10.24-5.12-21.333-10.24-31.573-16.213
+                                        l-4.267-2.56c-10.24-5.12-20.48-11.093-29.867-17.067l-2.56-1.707c-66.56-40.96-122.027-91.307-169.813-153.6
+                                        c-4.267-5.973-8.533-11.947-12.8-17.92c-2.56-3.413-5.12-5.973-6.827-9.387l-5.12-7.68c-4.267-5.12-7.68-10.24-11.093-16.213
+                                        l-0.853-0.853c-3.413-5.12-5.973-11.093-9.387-16.213l-0.853-1.707c-16.213-26.453-29.013-54.613-39.253-81.92
+                                        c-11.947-30.72-10.24-40.96-3.413-52.907c3.413-5.12,19.627-21.333,32.427-29.867C72.335,31.427,82.575,25.453,88.548,24.6
+                                        c3.413-0.853,11.093,0,15.36,1.707c1.707,0.853,5.12,2.56,7.68,4.267c12.8,8.533,55.467,60.587,69.973,87.893
+                                        c6.827,12.8,9.387,23.04,7.68,29.013c-1.707,5.973-3.413,9.387-23.04,24.747c-5.12,3.413-9.387,7.68-12.8,10.24
+                                        c-0.853,0.853-1.707,1.707-2.56,2.56l-0.853,0.853c-0.853,0.853-1.707,0.853-1.707,1.707l-0.853,0.853
+                                        c-4.267,5.12-6.827,15.36-6.827,23.04c0.853,15.36,9.387,40.107,22.187,60.587c9.387,14.507,26.453,34.133,42.667,48.64
+                                        c18.773,17.067,35.84,29.013,55.467,38.4c25.6,11.947,41.813,15.36,55.467,10.24h0.853l1.707-0.853
+                                        c1.707-0.853,4.267-1.707,5.12-2.56c0.853-0.853,1.707-0.853,2.56-1.707c0.853-0.853,1.707-1.707,15.36-17.92
+                                        c10.24-11.947,13.653-15.36,17.067-17.067c0.853-0.853,2.56-0.853,4.267-1.707c9.387-3.413,18.773-2.56,29.013,2.56
+                                        c8.533,5.12,28.16,16.213,40.107,24.747c17.92,11.947,52.053,39.253,55.467,43.52c4.267,4.267,5.973,8.533,5.973,14.507
+                                        C493.881,417.133,493.028,422.253,491.321,427.373z"/>
+                                </g>
+                            </g>
+                        </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                         <p>+234 9057923994</p></div>
+                    <div class="contact-info"><?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 474 474" style="enable-background:new 0 0 474 474;" xml:space="preserve">
+                        <g>
+                            <path d="M437.5,59.3h-401C16.4,59.3,0,75.7,0,95.8v282.4c0,20.1,16.4,36.5,36.5,36.5h401c20.1,0,36.5-16.4,36.5-36.5V95.8
+                                C474,75.7,457.6,59.3,437.5,59.3z M432.2,86.3L239.5,251.1L46.8,86.3H432.2z M447,378.2c0,5.2-4.3,9.5-9.5,9.5h-401
+                                c-5.2,0-9.5-4.3-9.5-9.5V104.9l203.7,174.2c0.1,0.1,0.3,0.2,0.4,0.3c0.1,0.1,0.3,0.2,0.4,0.3c0.3,0.2,0.5,0.4,0.8,0.5
+                                c0.1,0.1,0.2,0.1,0.3,0.2c0.4,0.2,0.8,0.4,1.2,0.6c0.1,0,0.2,0.1,0.3,0.1c0.3,0.1,0.6,0.3,1,0.4c0.1,0,0.3,0.1,0.4,0.1
+                                c0.3,0.1,0.6,0.2,0.9,0.2c0.1,0,0.3,0.1,0.4,0.1c0.3,0.1,0.7,0.1,1,0.2c0.1,0,0.2,0,0.3,0c0.4,0,0.9,0.1,1.3,0.1l0,0l0,0
+                                c0.4,0,0.9,0,1.3-0.1c0.1,0,0.2,0,0.3,0c0.3,0,0.7-0.1,1-0.2c0.1,0,0.3-0.1,0.4-0.1c0.3-0.1,0.6-0.2,0.9-0.2c0.1,0,0.3-0.1,0.4-0.1
+                                c0.3-0.1,0.6-0.2,1-0.4c0.1,0,0.2-0.1,0.3-0.1c0.4-0.2,0.8-0.4,1.2-0.6c0.1-0.1,0.2-0.1,0.3-0.2c0.3-0.2,0.5-0.3,0.8-0.5
+                                c0.1-0.1,0.3-0.2,0.4-0.3c0.1-0.1,0.3-0.2,0.4-0.3L447,109.2V378.2z"/>
+                        </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                         <p><a href="malito:mpamabofa@gmail.com">mpamabofa@gmail.com</a></p></div>
+                </div>
+            </div>
+        <div class="sl-group">
+                <div class="sl-text">connect with me</div>
+                <div class="sl-icon-container">
+                        <div class="sl-icon">
+                            <a href="https://www.facebook.com/bofa.mpama.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                            </a>
+                            </div>
+                        <div class="sl-icon">
+                                <a href="https://www.twitter.com/bofa_mpama">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                        </a> 
+                    </div>
+                        <div class="sl-icon">
+                                <a href="https://www.github.com/BofaMpana">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                                </a>                       
+                                </div>
+                        <div class="sl-icon">
+                                <a href="https://www.linkedin.com/in/bofa-mpama-1b3115251">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                        </a>
+                        </div>
+                </div>
+                </div>
+    </div> 
+    <div class="up-btn">
+        <a href="#sec1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg>
+        </a>
+        </div>
+    <div class="footer-bottom">
+            <div class="copyright-text"> &copy; copyright 2022. all rights reserved.</div>
+    </div>
+</div>
