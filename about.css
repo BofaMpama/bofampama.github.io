@@ -184,12 +184,12 @@ body::-webkit-scrollbar-track{
     top: 90%;
     width: fit-content;
     min-width: 90%;
-    padding-left: 10%;
+    padding-left: 4%;
     display: flex;
     gap: 55px;
 }
 .mi-icon{
-    margin-left: 5%;
+    justify-content: space-around;
 }
 .mi-icon svg{
     fill: white;
