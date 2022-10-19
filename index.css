@@ -187,6 +187,8 @@ body::-webkit-scrollbar-track{
 .menu-icons{
     position: absolute;
     top: 90%;
+    width: fit-content;
+    min-width: 90%;
     padding-left: 10%;
     display: flex;
     gap: 55px;
