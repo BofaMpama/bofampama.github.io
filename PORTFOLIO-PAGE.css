@@ -188,12 +188,11 @@ body::-webkit-scrollbar-track{
     display: flex;
     gap: 55px;
 }
-.mi-icon svg{
-    fill: white;
+.mi-icon{
+    margin-left: 5%;
 }
 .mi-icon svg{
     fill: white;
-    margin-left: 10%;
 }
 .portfolio-section{
     min-height: 65vh;

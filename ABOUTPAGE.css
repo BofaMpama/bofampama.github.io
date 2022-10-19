@@ -186,9 +186,11 @@ body::-webkit-scrollbar-track{
     display: flex;
     gap: 555px;
 }
+.mi-icon{
+    margin-left: 5%;
+}
 .mi-icon svg{
     fill: white;
-    margin-left: 10%;
 }
 .sec1{
     width: 100%;
