@@ -186,7 +186,7 @@ body::-webkit-scrollbar-track{
     min-width: 90%;
     padding-left: 10%;
     display: flex;
-    gap: 555px;
+    gap: 55px;
 }
 .mi-icon{
     margin-left: 5%;
