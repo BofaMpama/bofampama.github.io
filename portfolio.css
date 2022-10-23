@@ -41,11 +41,11 @@ body::-webkit-scrollbar-track{
     min-width: 100%;
     max-height: 12.5%;
     padding-bottom: 0.5%;
-    background: transparent;
+    background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: 20px;
-    box-shadow: inset rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     z-index: 1;
 }
@@ -203,6 +203,21 @@ body::-webkit-scrollbar-track{
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
+    animation: fading 0.3s forwards 0s ease-in;
+}
+@keyframes fading{
+    0%{
+        opacity: 0;
+        pointer-events: none;
+    }
+    90%{
+        opacity: 0.7;
+        pointer-events: none;
+    }
+    100%{
+        opacity: 1;
+        pointer-events: initial;
+    }
 }
 .portfolio-header{
     font-family: calibriFont;
@@ -215,6 +230,8 @@ body::-webkit-scrollbar-track{
     background: linear-gradient(to bottom right, rgb(65, 65, 201), rgb(13, 13, 117));
    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    opacity: 0;
+    animation: fading 1s forwards 0s ease-in;
 }
 .portfolio-text{
     font-family: calibriFont;
@@ -228,6 +245,8 @@ body::-webkit-scrollbar-track{
     background: linear-gradient(to bottom right, rgb(49, 49, 192), rgb(7, 7, 107));
    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    opacity: 0;
+    animation: fading 1.3s forwards 0s ease-in;
 }
 .section{
     min-height: fit-content;
@@ -238,14 +257,13 @@ body::-webkit-scrollbar-track{
 }
 .sec1{
     font-size: 100px;
-    background: linear-gradient(to top right, rgb(51, 150, 189), rgb(79, 111, 197), rgb(13, 23, 119));
+    background: rgb(84, 84, 230);
 }
 .sec2{
-    background: white;
+    background: rgb(213, 213, 221);
 }
 .sec3{
-    background: linear-gradient(to top right, rgb(51, 150, 189), rgb(79, 111, 197), rgb(13, 23, 119));
-}
+    background: rgb(84, 84, 230);}
 .section-header{
     font-family: calibriFont;
     font-size: 60px;
@@ -263,9 +281,7 @@ body::-webkit-scrollbar-track{
 .sec2-header{
     padding-bottom: 1%;
     background-clip: inherit;
-    background: linear-gradient(to bottom right, rgb(31, 109, 139), rgb(69, 129, 185), rgb(84, 84, 187));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;  
+    color: rgb(84, 84, 230); 
     margin: initial;
 }
 .section-text{
@@ -282,10 +298,7 @@ body::-webkit-scrollbar-track{
     width: 55%;
 }
 .sec2-text{
-    background-clip: inherit;
-    background: linear-gradient(to bottom right, rgb(51, 111, 134), blue);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;   
+    color: rgb(84, 84, 230);
 }
 .cc-box-group{
     display: flex;
@@ -411,7 +424,7 @@ body::-webkit-scrollbar-track{
     padding-left: 15%;
 }
 .sec2-box{
-    background: linear-gradient(to bottom right, skyblue, blue);
+    background: rgb(84, 84, 230);
     color: rgb(255, 255, 255);
     margin-left: 7%;
     padding: 1%;
@@ -534,12 +547,19 @@ body::-webkit-scrollbar-track{
     word-spacing: 0px;
     display: flex;
 }
-.contact-info svg{
+.contact-info img{
     display: flow-root;
     width: 25px;
     height: 25px;
     fill: blue;
     padding-top: 5px;
+}
+.contact-info img:nth-child(1){
+    width: 27px;
+    height: 27px;
+}
+.contact-info p{
+    padding-left: 3%;
 }
 .contact-info p{
     padding-left: 3%;
@@ -712,7 +732,7 @@ body::-webkit-scrollbar-track{
     }
     .sl-text{
         max-width: 70%;
-        font-size: 26px;
+        font-size: 29px;
     }
     .sl-icon{
         padding: 5px;
@@ -970,6 +990,7 @@ body::-webkit-scrollbar-track{
     }
     .sl-text{
         min-width: fit-content;
+        font-size: 29px;
     }
     .sl-icon{
         padding: 10px;
@@ -1006,10 +1027,8 @@ body::-webkit-scrollbar-track{
     .portfolio-header{
         padding: 80% 3% 1% 3%;
     }
-}
-@media(max-width: 500px){
     .sl-text{
-        font-size: 29px;
+        font-size: 28px;
     }
 }
 @media(max-width: 400px){
@@ -1050,7 +1069,7 @@ body::-webkit-scrollbar-track{
         max-width: 95%;
     }
     .sl-text{
-        font-size: 28px;
+        font-size: 27px;
     }
     .sl-icon{
         height: 25px;
