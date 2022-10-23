@@ -409,7 +409,7 @@ body::-webkit-scrollbar-track{
 .about-container{
     width: 100%;
     padding: 0%;
-    background: rgb(84, 84, 230);
+    background: rgb(44, 44, 209);
     color: white;
     font-family: Calibri;
 }
@@ -433,7 +433,7 @@ body::-webkit-scrollbar-track{
     margin-left: 7%;
 }
 .about-btn{
-    background: rgb(72, 72, 197);
+    background: rgb(40, 40, 175);
     width: 13%;
     text-align: center;
     text-transform: capitalize;
@@ -459,7 +459,7 @@ body::-webkit-scrollbar-track{
     padding-left: 5%;
     padding-top: 7%;
     text-transform: capitalize;
-    text-shadow: 5px 5px rgb(51, 51, 218);
+    text-shadow: 5px 5px rgb(44, 44, 209);
     word-spacing: 10px;
     letter-spacing: 5px;
 }
@@ -477,7 +477,7 @@ body::-webkit-scrollbar-track{
     height: 25%;
     max-height: 27%;
     display: flex;
-    background: rgb(69, 69, 209);
+    background: rgb(44, 44, 209);
     text-align: left;
     padding: 1%;
     padding-bottom: 1%;

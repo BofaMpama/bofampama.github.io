@@ -257,13 +257,13 @@ body::-webkit-scrollbar-track{
 }
 .sec1{
     font-size: 100px;
-    background: rgb(84, 84, 230);
+    background: rgb(47, 47, 215);
 }
 .sec2{
     background: rgb(213, 213, 221);
 }
 .sec3{
-    background: rgb(84, 84, 230);}
+    background: rgb(43, 43, 220);}
 .section-header{
     font-family: calibriFont;
     font-size: 60px;
@@ -281,7 +281,7 @@ body::-webkit-scrollbar-track{
 .sec2-header{
     padding-bottom: 1%;
     background-clip: inherit;
-    color: rgb(84, 84, 230); 
+    color: rgb(44, 44, 209); 
     margin: initial;
 }
 .section-text{
@@ -298,7 +298,7 @@ body::-webkit-scrollbar-track{
     width: 55%;
 }
 .sec2-text{
-    color: rgb(84, 84, 230);
+    color: rgb(44, 44, 209);
 }
 .cc-box-group{
     display: flex;
@@ -314,7 +314,7 @@ body::-webkit-scrollbar-track{
     min-height: fit-content;
     height: fit-content;
     background: white;
-    color: rgb(46, 106, 155);
+    color: rgb(44, 44, 210);
     font-family: calibriFont;
     font-size: 26px;
     font-weight: bolder;
@@ -424,7 +424,7 @@ body::-webkit-scrollbar-track{
     padding-left: 15%;
 }
 .sec2-box{
-    background: rgb(84, 84, 230);
+    background: rgb(44, 44, 209);
     color: rgb(255, 255, 255);
     margin-left: 7%;
     padding: 1%;
