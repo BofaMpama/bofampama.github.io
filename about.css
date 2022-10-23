@@ -211,9 +211,9 @@ body::-webkit-scrollbar-track{
 .about-container{
     width: 100%;
     padding: 0%;
-    background: rgb(44, 44, 215);
+    background: rgb(19, 19, 141);
     color: white;
-    font-family: Calibri;
+    font-family: calibriFont;
     display: flex;
 }
 .about-container img{
@@ -242,7 +242,7 @@ body::-webkit-scrollbar-track{
     padding-bottom: 20px;
 }
 .about-btn{
-    background: rgb(37, 37, 173);
+    background: rgb(19, 19, 141);
     width: 13%;
     text-align: center;
     text-transform: capitalize;
@@ -261,10 +261,10 @@ body::-webkit-scrollbar-track{
     width: 100%;
 }
 .service-header{
-    font-family: Calibri;
+    font-family: calibriFont;
     font-size: 100px;
     font-weight: bold;
-    color: rgb(44, 44, 215);
+    color: rgb(19, 19, 141);
     padding-left: 5%;
     padding-top: 3%;
     text-transform: capitalize;
@@ -286,7 +286,7 @@ body::-webkit-scrollbar-track{
     height: 25%;
     max-height: 27%;
     display: flex;
-    background: rgb(44, 44, 209);
+    background: rgb(19, 19, 141);
     text-align: left;
     padding: 1%;
     padding-bottom: 5px;
@@ -300,7 +300,7 @@ body::-webkit-scrollbar-track{
 }
 .service-text{
     color: white;
-    font-family: Calibri;
+    font-family: calibriFont;
     padding: 1%;
     line-height: 31px;
     letter-spacing: 3px;
@@ -320,10 +320,10 @@ body::-webkit-scrollbar-track{
 }
 .portfolio-link{
     margin-left: 5%;
-    font-family: Calibri;
+    font-family: calibriFont;
     font-size: 25px;
     font-weight: bolder;
-    color: rgb(43, 43, 220);
+    color: rgb(19, 19, 141);
     text-decoration: underline;
     letter-spacing: 1px;
     word-spacing: 2px;

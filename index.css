@@ -409,9 +409,9 @@ body::-webkit-scrollbar-track{
 .about-container{
     width: 100%;
     padding: 0%;
-    background: rgb(44, 44, 209);
+    background: rgb(19, 19, 141);
     color: white;
-    font-family: Calibri;
+    font-family: calibriFont;
 }
 .about-container img{
     width: 100%;
@@ -433,7 +433,7 @@ body::-webkit-scrollbar-track{
     margin-left: 7%;
 }
 .about-btn{
-    background: rgb(40, 40, 175);
+    background: rgb(19, 19, 141);
     width: 13%;
     text-align: center;
     text-transform: capitalize;
@@ -452,14 +452,14 @@ body::-webkit-scrollbar-track{
     width: 100%;
 }
 .service-header{
-    font-family: Calibri;
+    font-family: calibriFont;
     font-size: 100px;
     font-weight: bold;
     color: white;
     padding-left: 5%;
     padding-top: 7%;
     text-transform: capitalize;
-    text-shadow: 5px 5px rgb(44, 44, 209);
+    text-shadow: 5px 5px rgb(19, 19, 141);
     word-spacing: 10px;
     letter-spacing: 5px;
 }
@@ -477,7 +477,7 @@ body::-webkit-scrollbar-track{
     height: 25%;
     max-height: 27%;
     display: flex;
-    background: rgb(44, 44, 209);
+    background: rgb(19, 19, 141);
     text-align: left;
     padding: 1%;
     padding-bottom: 1%;
@@ -491,7 +491,7 @@ body::-webkit-scrollbar-track{
 }
 .service-text{
     color: white;
-    font-family: Calibri;
+    font-family: calibriFont;
     padding: 1%;
     line-height: 31px;
     letter-spacing: 3px;
