@@ -1219,7 +1219,7 @@ body::-webkit-scrollbar-track{
         display: none;
     }
     .about-btn{
-        min-width: 35%;
+        min-width: 40%;
     }
     .service-header{
         font-size: 50px;
