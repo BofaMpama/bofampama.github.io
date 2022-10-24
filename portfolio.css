@@ -142,7 +142,7 @@ body::-webkit-scrollbar-track{
     height: 0;
     overflow: hidden;
     top: 0;
-    background: rgba(47, 54, 64, 0.973);
+    background: rgba(41, 46, 53, 0.993);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: (6px);
     transition: 0.3s;
@@ -192,6 +192,7 @@ body::-webkit-scrollbar-track{
 }
 .mi-icon{
     justify-content: space-around;
+    min-width: 20%;
 }
 .mi-icon svg{
     fill: white;
