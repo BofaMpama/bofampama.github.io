@@ -53,5 +53,3 @@ function openPicture4(){
 function closePicture4(){
     document.getElementById('picture4').style.width = 0;
 }
-let photoreveal = document.getElementById('sec2-photo-reveal');
-let textreveal = document.getElementById('about-reveal');
