@@ -1,9 +1,15 @@
-let scrollReveal = '50px';
 function openMenu(){
     document.getElementById('menu').style.height = '100%';
 }
 function closeMenu(){
     document.getElementById('menu').style.height = 0;
+}
+function openParagraph(){
+    document.getElementById('paragragh').style.display = 'initial';
+}
+function removeItem(){
+    document.getElementById('about-button').style.display = 'none';
+    document.getElementById('dots').style.display = 'none';
 }
 function openPicture1a(){
     document.getElementById('picture1a').style.width = '100%';

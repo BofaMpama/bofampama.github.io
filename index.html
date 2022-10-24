@@ -18,7 +18,7 @@
                 <div class="nav-list">
                     <ul>
                             <li><a href="index.html" class="active"><b>home</b></a></li>
-                            <li><a href="about.html">about me</a></li>
+                            <li><a href="#about-me">about me</a></li>
                             <li><a href="portfolio.html">portfolio</a></li>
                     </ul>
                 </div>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="menu-links">
                     <li><a href="index.html">home</a></li>
-                    <li><a href="about.html">about me</a></li>
+                    <li><a href="#about-page"onclick="closeMenu()" >about me</a></li>
                     <li><a href="portfolio.html">portfolio</a></li>
                     <li><a href="#contact-link" onclick="closeMenu()">contact me</a></li>
                 </div>
@@ -55,7 +55,7 @@
             <div class="ss-icon"><a href="https://www.github.com/BofaMpama"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></div>
             <div class="ss-icon"><a href="https://www.linkedin.com/in/bofa-mpama-1b3115251"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a></div>
        </div>
-       <div class="sec1-text-container">
+       <div class="sec1-text-container hidden">
            <div class="sec1-text-btn">web designer</div>
             <div class="sec1-intro-text">
                     hi, i'm <span>bofa</span>
@@ -65,50 +65,56 @@
                     a liking for creating the impossible.
                 </div>
        </div>
-      <div class="sec1-right-half">
+      <div class="sec1-right-half hidden">
         <div class="sec1-photo">
             <img src="./images/d5.PNG">
         </div>
-        <div class="see-more-btn">
+        <div class="see-more-btn"  id="about-me">
              <span id="sec2"><a href="#sec2">scroll down<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M374.6 310.6l-160 160C208.4 476.9 200.2 480 192 480s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 370.8V64c0-17.69 14.33-31.1 31.1-31.1S224 46.31 224 64v306.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0S387.1 298.1 374.6 310.6z"/></svg></a></span>
          </div>
      </div>
       </div>
       <div class="sec2">
-            <div class="top-half">
+            <div class="top-half" id="about-page">
                 <div class="about-container">
-                    <div class="about-image">
+                    <div class="about-image hidden">
                             <img src="images/d13.PNG" alt="">
                     </div>
-                    <div class="about-header">about me</div>
-                    <div class="about-text">
-                        <p>
-                            I’m not just a tech guy, I’m also an artist. I ensure my creativity and uniqueness is reflected in all of my works. My vast knowledge in different fields helps me to always be up to the task...
-                    </p>
-                    <div class="about-btn"><a href="about.html">read more</a></div>
-                    </div>
+                <div class="about-text-group">
+                        <div class="about-header hidden">about me</div>
+                        <div class="about-text hidden">
+                            <p>
+                                I’m not just a tech guy, I’m also an artist. I ensure my creativity and uniqueness is reflected in all of my works. My vast knowledge in different fields helps me to always be up to the task.<span onclick="removeItem()"><span id="dots">..</span></span>
+                        </p>
+                        <p id="paragragh">
+                                If you ever need a stellar job done, I'm the guy for you. You can check out my portfolio or scroll down to the next screen if you're still asking what services I provide, or why you should give me a job.
+                        </p>
+                        <div class="about-btn" id="about-button" onclick="openParagraph()"><span onclick="removeItem()">read more</span></div>
+                       
+                </div>   
+                </div>
                 </div>
             </div>
             <div class="bottom-half">
                 <div class="service-container">
-                    <div class="service-header">my services include:</div>
+                    <div class="service-header hidden">my services include:</div>
                 </div>
-                <div class="service-box-container">
-                    <div class="service-box">
+                <div class="service-box-container sbc-1">
+                    <div class="service-box hidden">
                         <img src="./images/front-end.png" alt="click me">
                         <div class="service-text">
                         <p>Front-end Developing</p>
                         <p>I create beautiful & responsive front-end pages. My HTML5, CSS & Javascript skills are at a peak level.</p>
                         </div>
                     </div>
-                    <div class="service-box">
+                    <div class="service-box hidden">
                         <img src="./images/illustration.png" alt="click me">
                         <div class="service-text">
                         <p>Graphics Design</p> 
                         <p>I make out-of-this-world graphics designs that'll have your eyes glued to the screen. My creativity is very unique.</p>
                         </div>
                     </div>
-                    <div class="service-box">
+                    <div class="service-box hidden">
                         <img src="./images/poem.png" alt="click me">
                         <div class="service-text">
                         <p>Content Creation</p>
@@ -117,18 +123,49 @@
                     </div>
                 </div>
             </div>
+            <div class="sec3">
+                    <div class="service-container">
+                            <div class="service-header hidden">Why Give Me A Job?</div>
+                        </div>
+                        <div class="service-box-container sbc-2">
+                            <div class="service-box hidden">
+                                <img src="./images/puzzle-bulb.PNG" alt="click me">
+                                <div class="service-text">
+                                <p>MY CREATIVITY IS UNIQUE</p>
+                                <p>I have a unique ability to draw inspiration from any and everything around me, ensuring a uniqueness in the quality and style of whatever I do for you.</p>
+                                </div>
+                            </div>
+                            <div class="service-box hidden">
+                                <img src="./images/handshake.png" alt="click me">
+                                <div class="service-text">
+                                <p>I'M DEDICATED TO MY CRAFT & CLIENTS</p> 
+                                <p>My passion for what I do gives me the necessary drive to output the highest quality of work at all times, keeping my clients satisfied.</p>
+                                </div>
+                            </div>
+                            <div class="service-box hidden">
+                                <img src="./images/clock.png" alt="click me">
+                                <div class="service-text">
+                                <p>I ALWAYS KEEP TO A DEADLINE</p>
+                                <p>My watch never runs out of battery, and I never run out of fuel, ensuring that I stay on track at maximum speed to deliver quality work to you at all times.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-link hidden"><a href="portfolio.html">Want to Check My Portfolio Out?</a></div>
+                    </div>
+            </div>
         <div class="sec4 reveal" id="contact-link">
             <div class="footer-container">
                 <div class="footer-links">
-                    <ul>
+                    <ul class="hidden">
                         <span>links</span>
                         <li><a href="index.html">home</a></li>
                         <li><a href="about.html">about me</a></li>
                         <li><a href="portfolio.html">portfolio</a></li>
                     </ul>
                 </div>
-                <div class="contact-container">
-                    <div class="contact-header">thanks for visiting my portfolio website. wanna stay in touch?</div>
+                <div class="contact-container hidden">
+                    <div class="contact-header">thanks for visiting my portfolio website. want to stay in touch?</div>
                     <div class="contact-group">
                         <div class="contact-info">
                             <img src="images/wifi-phone.PNG" alt="">
@@ -138,7 +175,7 @@
                              <p><a href="malito:mpamabofa@gmail.com">mpamabofa@gmail.com</a></p></div>
                     </div>
                 </div>
-                <div class="sl-group">
+                <div class="sl-group hidden">
                         <div class="sl-text">connect with me</div>
                         <div class="sl-icon-container">
                             <div class="sl-icon">
@@ -164,15 +201,16 @@
                     </div>
                     </div>
             </div> 
-            <div class="up-btn">
+            <div class="up-btn hidden">
             <a href="#sec1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg>
             </a>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom hidden">
                     <div class="copyright-text"> &copy; copyright 2022. all rights reserved.</div>
             </div>
         </div>
         <script src="SCRIPT.js"></script>
+        <script src="SCROLL.js"></script>
 </body>
 </html>

@@ -257,13 +257,13 @@ body::-webkit-scrollbar-track{
 }
 .sec1{
     font-size: 100px;
-    background: rgb(19, 19, 141);
+    background: linear-gradient(to bottom right, rgb(49, 49, 192), rgb(7, 7, 107));
 }
 .sec2{
     background: rgb(213, 213, 221);
 }
 .sec3{
-    background: rgb(19, 19, 141);
+    background: linear-gradient(to bottom right, rgb(49, 49, 192), rgb(7, 7, 107));
 }
 .section-header{
     font-family: calibriFont;
@@ -282,7 +282,7 @@ body::-webkit-scrollbar-track{
 .sec2-header{
     padding-bottom: 1%;
     background-clip: inherit;
-    color: rgb(19, 19, 141);
+    color: rgb(24, 24, 173);
     margin: initial;
 }
 .section-text{
@@ -326,6 +326,12 @@ body::-webkit-scrollbar-track{
     display: block;
     border-radius: 5px;
     cursor: pointer;
+}
+.cc-box:nth-child(2){
+    transition-delay: 200ms;
+}
+.cc-box:nth-child(3){
+    transition-delay: 400ms;
 }
 .cc-box:hover{
     filter: blur(0);
@@ -425,7 +431,7 @@ body::-webkit-scrollbar-track{
     padding-left: 15%;
 }
 .sec2-box{
-    background: rgb(19, 19, 141);
+    background: linear-gradient(to bottom right, rgb(49, 49, 192), rgb(7, 7, 107));
     color: rgb(255, 255, 255);
     margin-left: 7%;
     padding: 1%;
@@ -441,6 +447,15 @@ body::-webkit-scrollbar-track{
     display: block;
     border-radius: 5px;
     cursor: pointer;
+}
+.sec2-box:nth-child(2){
+    transition-delay: 200ms;
+}
+.sec2-box:nth-child(3){
+    transition-delay: 400ms;
+}
+.sec2-box:nth-child(4){
+    transition-delay: 600ms;
 }
 .sec2-picture-group{
     position: fixed;
@@ -881,7 +896,7 @@ body::-webkit-scrollbar-track{
     }
     .cc-box{
         width: 60%;
-        margin-left: 6%;
+        margin-left: 4%;
         margin-bottom: 5%;
     }
     .sec2-box{
@@ -950,7 +965,7 @@ body::-webkit-scrollbar-track{
         text-align: center;
     }
     .group3{
-        margin-left: 13%;
+        margin-left: 15%;
     }
     .sec4{
         height: fit-content;
@@ -1201,5 +1216,21 @@ body::-webkit-scrollbar-track{
     }
     .copyright-text{
         margin-top: 2%;
+    }
+}
+.hidden{
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
     }
 }

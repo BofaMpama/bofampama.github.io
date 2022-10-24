@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BOFA MPAMA - PORTFOLIO</title>
     <link rel="stylesheet" href="portfolio.css">
-    <script src="SCRIPT.js"></script>
 </head>
 <body>
     <div class="nav-header">
@@ -19,7 +18,7 @@
         <div class="nav-list">
             <ul>
                     <li><a href="index.html">home</a></li>
-                    <li><a href="about.html">about me</a></li>
+                    <li><a href="index.html#about-me">about me</a></li>
                     <li><a href="portfolio.html"><b>portfolio</b></a></li>
             </ul>
         </div>
@@ -38,7 +37,7 @@
             </div>
             <div class="menu-links">
                 <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about me</a></li>
+                <li><a href="index.html#about-me">about me</a></li>
                 <li><a href="portfolio.html">portfolio</a></li>
                 <li><a href="#contact-link" onclick="closeMenu()">contact me</a></li>
             </div>
@@ -50,16 +49,16 @@
             </div>
         </div>
         <div class="portfolio-section" id="section">
-            <div class="portfolio-header">my portfolio</div>
-            <div class="portfolio-text">take a peek into some of my finest projects and designs.</div>
+            <div class="portfolio-header hidden">my portfolio</div>
+            <div class="portfolio-text hidden">take a peek into some of my finest projects and designs.</div>
         </div>
         <div class="sec1">
-            <div class="section-header sec1-header">front-end developing</div>
-            <div class="section-text st1">these are a few pictures of the beautiful and interactive front-end webpages that i create. click any of the buttons below to view.</div>
+            <div class="section-header sec1-header hidden">front-end developing</div>
+            <div class="section-text st1 hidden">these are a few pictures of the beautiful and interactive front-end webpages that i create. click any of the buttons below to view.</div>
             <div class="cc-box-group">
-            <div class="cc-box wb1" onclick="openPicture1a()"><p>beach finderz</p></a></div>
-            <div class="cc-box wb2" onclick="openPicture2a()">black atom</a></div>
-            <div class="cc-box wb3" onclick="openPicture3a()">raindrop</a></div>
+            <div class="cc-box wb1 hidden" onclick="openPicture1a()"><p>beach finderz</p></a></div>
+            <div class="cc-box wb2 hidden" onclick="openPicture2a()">black atom</a></div>
+            <div class="cc-box wb3 hidden" onclick="openPicture3a()">raindrop</a></div>
             </div>
         </div>
     <div class="sec1-picture-group" id="picture1a">
@@ -95,13 +94,13 @@
                     </div>
                 </div>
     <div class="section sec2">
-        <div class="scroll-reveal section-header sec2-header">graphics design</div>
-        <div class="section-text sec2-text">elegant and stylish. i could make even better for you. click any of the buttons below to view some of my graphics designs.</div>
+        <div class="scroll-reveal section-header sec2-header hidden">graphics design</div>
+        <div class="section-text sec2-text hidden">elegant and stylish. i could make even better for you. click any of the buttons below to view some of my graphics designs.</div>
         <div class="cc-box-group">
-        <div class="sec2-box" onclick="openPicture1()">flyer 1</div>
-        <div class="sec2-box" onclick="openPicture2()">flyer 2</div>
-        <div class="sec2-box" onclick="openPicture3()">flyer 3</div>
-        <div class="sec2-box" onclick="openPicture4()">flyer 4</div>
+        <div class="sec2-box hidden" onclick="openPicture1()">flyer 1</div>
+        <div class="sec2-box hidden" onclick="openPicture2()">flyer 2</div>
+        <div class="sec2-box hidden" onclick="openPicture3()">flyer 3</div>
+        <div class="sec2-box hidden" onclick="openPicture4()">flyer 4</div>
     </div>
     </div>
         <div class="sec2-picture-group" id="picture1">
@@ -133,25 +132,25 @@
                         <div class="sec2-picture-text">click on the picture to display in full screen.</div>
                     </div>
 <div class="section sec3">
-    <div class="scroll-reveal section-header">content creation</div>
-    <div class="section-text">never heard of a web developer gifted in writing? now you know. click any of the boxes below to see some of my best work.</div>
+    <div class="scroll-reveal section-header hidden">content creation</div>
+    <div class="section-text hidden">never heard of a web developer gifted in writing? now you know. click any of the boxes below to see some of my best work.</div>
 <div class="cc-box-group group3">
-    <div class="cc-box"><a href="documents/MY POEMS.docx"><img src="images/poem.png">poems</a></div>
-    <div class="cc-box"><a href="documents/SHORT STORY - A NEW BEGINNING.docx"><img src="images/story.png">short stories</a></div>
-    <div class="cc-box"><a href="documents/BLOG POST - CHURCH CLOTHES; YOU'VE BEEN DOING IT WRONG.docx"><img src="images/blog.png">blog posts</a></div>
+    <div class="cc-box hidden"><a href="documents/MY POEMS.docx"><img src="images/poem.png">poems</a></div>
+    <div class="cc-box hidden"><a href="documents/SHORT STORY - A NEW BEGINNING.docx"><img src="images/story.png">short stories</a></div>
+    <div class="cc-box hidden"><a href="documents/BLOG POST - CHURCH CLOTHES; YOU'VE BEEN DOING IT WRONG.docx"><img src="images/blog.png">blog posts</a></div>
 </div>
 </div>
 <div class="sec4" id="contact-link">
     <div class="footer-container">
         <div class="footer-links">
-            <ul>
+            <ul class="hidden">
                 <span>links</span>
                 <li><a href="index.html">home</a></li>
                 <li><a href="about.html">about me</a></li>
                 <li><a href="portfolio.html">portfolio</a></li>
             </ul>
         </div>
-        <div class="contact-container">
+        <div class="contact-container hidden">
                 <div class="contact-header">thanks for visiting my portfolio website. wanna stay in touch?</div>
                 <div class="contact-group">
                     <div class="contact-info">
@@ -162,7 +161,7 @@
                          <p><a href="malito:mpamabofa@gmail.com">mpamabofa@gmail.com</a></p></div>
                 </div>
             </div>
-        <div class="sl-group">
+        <div class="sl-group hidden">
                 <div class="sl-text">connect with me</div>
                 <div class="sl-icon-container">
                         <div class="sl-icon">
@@ -188,12 +187,16 @@
                 </div>
                 </div>
     </div> 
-    <div class="up-btn">
+    <div class="up-btn hidden">
         <a href="#section">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg>
         </a>
         </div>
-    <div class="footer-bottom">
+    <div class="footer-bottom hidden">
             <div class="copyright-text"> &copy; copyright 2022. all rights reserved.</div>
     </div>
 </div>
+<script src="SCRIPT.js"></script>
+<script src="SCROLL.js"></script>
+</body>
+</html>
