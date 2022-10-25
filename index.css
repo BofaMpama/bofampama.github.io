@@ -1118,6 +1118,7 @@ body::-webkit-scrollbar-track{
     .about-btn{
         margin-left: 60%;
         min-width: 30%;
+        text-align: center;
     }
     .service-header{
         font-size: 60px;
@@ -1219,7 +1220,7 @@ body::-webkit-scrollbar-track{
         display: none;
     }
     .about-btn{
-        min-width: 40%;
+        min-width: 42%;
     }
     .service-header{
         font-size: 50px;
