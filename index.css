@@ -1096,7 +1096,7 @@ body::-webkit-scrollbar-track{
         margin: 0;
         padding: 0;
         display: block;
-        scroll-margin: 100px;
+        scroll-margin: 5%;
     }
     .about-image{
         padding: 0;
