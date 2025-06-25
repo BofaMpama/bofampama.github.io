@@ -1,0 +1,245 @@
+@media only screen and (max-width: 1200px) {
+  
+    .logo:nth-of-type(1){
+        margin-left: 30px;
+        font-size: 2em;
+    }
+    
+    section.sec1{
+        width: 90%;
+        margin-left: 5%;
+        gap: 0;
+        padding: 100px 5% 0 5%;
+    }
+     .container{
+        min-width: 60%;
+    }
+    .sec4 .card-container{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .sec4 .card-image{
+        width: 40%;
+        max-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1100px){  
+    .logo:nth-of-type(1){
+        margin-left: 20px;
+    }
+    .nav-links{
+    display: none;
+    }
+    button.hamburger{
+        display: initial;
+        margin-right: 20px;
+    }
+    section.sec1{
+        width: 90%;
+        margin-left: 5%;
+        padding: 100px 0 0px 0;
+        gap: 20px;
+    }
+   
+}
+
+@media only screen and (max-width: 900px){
+    body{
+        width: 100%;
+    }
+    section.sec1{
+        flex-direction: column;
+        justify-content: last baseline;
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: last baseline;
+            align-items: last baseline;
+            text-align: left;
+            min-width: 90%;
+            margin-left: 5%;
+            padding: 50px 0 50px 0;
+        }
+
+          .name::after{
+            display: flex;
+            flex-direction: column;
+            align-self: first baseline;
+            width: 100px;
+    }
+    }
+  
+    .banner-photo{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+   .scroller{
+    max-width: 80%;
+   }
+    
+    section.sec3{
+        flex-direction: column;
+        gap: 50px;
+        padding: 100px 10% 0px 10%;
+        .about{
+            max-width: 100%;
+            }
+    }
+
+    section.sec4{
+        width: 100%;
+    }
+    .title-header{
+        margin-left: 10%;
+    }
+    section.sec4 .card-container{        
+        max-width: 100%;
+        gap: 100px;
+        padding: 50px 5% 50px 5%;
+    }
+    .card{
+        flex-direction: column;
+   
+    .card-details{
+        width: 100%;
+    }
+    }
+    section.sec4 .card-image{
+        max-width: 65%;
+        width: 65%;
+    }
+    .sec4 .card:nth-of-type(2){
+        flex-direction: column;
+        
+
+    .card-details{
+        width: 100%;
+    }
+    }
+    .sec4 .card-image{
+        width: 500px;
+        max-width: 100%;
+
+        img{
+            width: 100%;
+        }
+    }   
+    .sec5 .accordion{
+        width: 90%;
+    }
+    .sec6 .connect-container{
+        flex-direction: column;
+    }
+
+}
+@media only screen and (max-width: 600px){
+  .logo:nth-of-type(1){
+        margin-left: 10px;
+        font-size: 1.5em;
+    }   
+    button.hamburger{
+        margin-right: 10px;
+    }
+  
+    section.sec1{
+        padding: 100px 0 0 0;
+       
+   .container{
+    min-width: 100%;
+    margin-left: 0;
+    padding: 0;   
+ }
+    .name{
+        font-size: 2.5em;
+    }
+    .name::after{
+        margin-top: 10px;
+    }
+    .profession{
+        font-size: 30px;
+   }
+    }
+
+
+ 
+.scroller{
+    max-width: 90%;
+   }
+   section.sec3{
+        padding: 100px 0% 0px 5%;
+    }
+     .button-group{
+        button{
+            font-size: 16px;
+        }
+    }
+section.sec4{
+        padding: 100px 0 50px 0;      
+}
+        .title-header{
+            font-size: 60px;
+            margin-left: 0%;
+            text-align: center;
+        }
+
+        section.sec4 .card-container{
+            padding: 30px 0 0 0;
+        }
+        .sec4 .card{
+            gap: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section.sec4 .card-image{
+            height: 210px;
+            max-width: 100%;
+            width: 100%;
+        }
+        .sec4 .card-image img{
+            height: 210px;
+        }
+
+        .card-details{
+   
+            .project-tools{
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+section.sec5{
+    padding: 50px 0 100px 0;
+}
+.accordion{
+    padding: 20px 0 0 0;
+}
+ .sec6{
+        .connect-title::before{
+            width: 60px;
+        }
+        .connect-container{
+           margin-left: 5%; 
+           width: 90%;
+           gap: 20px;
+        h3{
+            font-size: 50px;
+            line-height: 60px;
+        }
+        }
+    }
+    footer{
+        .footer-logo{
+            font-size: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 300px){
+body{
+    max-width: fit-content;
+}
+}
