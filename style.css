@@ -208,6 +208,8 @@ section.sec1{
             font-size: 18px;
             font-weight: bolder;
             letter-spacing: 1px;
+            min-width: fit-content;
+            flex: 1;
 
         }
         button:nth-child(1){
