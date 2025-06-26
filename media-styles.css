@@ -285,6 +285,10 @@ section.sec5{
             line-height: 60px;
         }
         }
+
+        input{
+            max-width: 100%;
+        }
     }
     footer{
         .footer-logo{
