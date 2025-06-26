@@ -178,11 +178,17 @@
    }
     }
 
+.image-container{
+    padding: 60px 0 0 0;
+}
+.image{
+    transform: rotateY(5deg) rotateX(10deg);
 
- 
-.scroller{
-    max-width: 90%;
-   }
+    &:hover{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+
    section.sec3{
         padding: 100px 0% 0px 5%;
     }
