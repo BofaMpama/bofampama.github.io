@@ -186,6 +186,7 @@
 
    section.sec3{
         padding: 100px 0% 0px 5%;
+        max-width: 100%;
     }
      .button-group{
         button{
