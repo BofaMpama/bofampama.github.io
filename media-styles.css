@@ -166,6 +166,7 @@
     }
     form{
         flex-direction: column;
+        max-width: 100%;
      .upper{
             flex-direction: column;
             gap: 40px;
@@ -271,6 +272,7 @@ section.sec5{
     padding: 20px 0 0 0;
 }
  .sec6{
+    max-width: 100%;
         .connect-title::before{
             width: 60px;
         }
