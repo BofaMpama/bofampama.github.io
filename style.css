@@ -340,6 +340,12 @@ section.sec3{
             letter-spacing: 1px;
             color: var(--color1);
         }
+
+        .skills{
+            margin-top: 50px;
+            font-size: larger;
+            font-weight: bold;
+        }
     }
 
     ul{
