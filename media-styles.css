@@ -63,17 +63,13 @@
             padding: 50px 0 50px 0;
         }
 
-          .name::after{
-            display: flex;
-            flex-direction: column;
-            align-self: first baseline;
-            width: 100px;
-    }
+         
     }
   
-    .banner-photo{
-        width: 80%;
-        margin-left: 10%;
+    .button-group{
+        button{
+            flex: 1;
+        }
     }
 
    .scroller{
@@ -165,10 +161,7 @@
         text-align: center;
         align-self: center;
     }
-    .name::after{
-        margin-top: 10px;
-        align-self: center;
-    }
+    
     .profession{
         font-size: 30px;
    }

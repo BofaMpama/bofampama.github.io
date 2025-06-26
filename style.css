@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
 :root{
     --primary: rgb(2, 4, 20);
     --secondary: #0084ff;
@@ -7,6 +9,16 @@
     --background: rgba(20, 21, 22, 0.651);
     --darkGrey: rgb(23, 26, 34);
     --lightGrey: rgba(100, 100, 100, 0.288);
+    --fs-hero: 2.75rem;    
+    --fs-subtitle: 1.5rem;  
+    --fs-body: 1rem;       
+    --fs-small: 0.875rem; 
+    --space-sm: 0.75rem;
+    --space-md: 1.5rem;
+    --space-lg: 3rem;
+    --radius: 0.75rem;
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.25);
+    --body-font: 'Fira Code', monospace;
 }
 
 *, *::before, *::after{
@@ -149,7 +161,7 @@ section.sec1{
     padding: 100px 0 150px 0px;
     line-height: 60px;
     max-width: 50%;
-    h1{
+     h1{
         font-size: 2.5em;
         span{
             color: var(--secondary);
@@ -162,33 +174,24 @@ section.sec1{
    .name {
     font-size: 4em;
     font-weight: bolder;
-  display: inline-block;
-  align-items: baseline;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  gap: 0;              
-  position: relative; 
-}
+    line-height: 60px;
+    span{
+    height: 10px;
+    border-bottom: 3px solid var(--secondary);
+  }
 
-.name::after {
-  content: "";
-  width: 230px;
-  height: 3px;
-  background: var(--secondary);
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
+ 
+} 
+
+
 
     .profession{
+        padding-top: 10px;
         font-size: 35px;
         font-weight: bold;
         color: var(--color2);
   
-        span{
-            color: var(--color1);
-        }
+    
     }
     .description{
         font-size: 20px;
@@ -211,7 +214,6 @@ section.sec1{
             font-weight: bolder;
             letter-spacing: 1px;
             min-width: fit-content;
-            flex: 1;
 
         }
         button:nth-child(1){
@@ -227,22 +229,12 @@ section.sec1{
 }
 
 
-.banner-photo{
-    width: 500px;
-    height: 500px;
-    filter: drop-shadow(0 0 15px rgba(0, 195, 255, 0.5))
-          drop-shadow(0 0 25px rgba(0, 195, 255, 0.3));
-}
 
 
 
 
 
 
-
-
-
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 
 
 .image-container {
