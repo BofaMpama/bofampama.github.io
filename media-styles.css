@@ -50,39 +50,74 @@
     }
     section.sec1{
         flex-direction: column;
-        justify-content: last baseline;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 50px;
 
         .container{
             display: flex;
             flex-direction: column;
-            justify-content: last baseline;
-            align-items: last baseline;
-            text-align: left;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             min-width: 90%;
             margin-left: 5%;
             padding: 50px 0 50px 0;
+
+            .profession{
+                text-align: center;
+            }
         }
 
-         
+         h1{
+    align-self: center;
+    font-size: 2.7em;
+ }
+    .name{
+        font-size: 3em;
+        text-align: center;
+        align-self: center;
+    }
+    
+    }
+
+    .profession{
+        text-align: center;
     }
   
     .button-group{
+        align-self: center;
         button{
             flex: 1;
         }
     }
 
-   .scroller{
-    max-width: 80%;
-   }
-    
+    .image-container{
+        display: flex;
+        justify-content: center;
+    }
+  .image{
+    align-self: center;
+  }
     section.sec3{
         flex-direction: column;
         gap: 50px;
-        padding: 100px 10% 0px 10%;
+        padding: 50px 10% 100px 10%;
+        mask: 0;
         .about{
             max-width: 100%;
             }
+
+        .services{
+            ul{
+                flex-wrap: wrap;
+
+                li{
+                    flex: 1;
+                    min-width: fit-content;
+                }
+            }
+        }    
     }
 
     section.sec4{
@@ -129,6 +164,16 @@
     .sec6 .connect-container{
         flex-direction: column;
     }
+    form{
+        flex-direction: column;
+     .upper{
+            flex-direction: column;
+            gap: 40px;
+        }
+        input{
+            min-width: 400px;
+        }
+    }
 
 }
 @media only screen and (max-width: 600px){
@@ -152,16 +197,7 @@
     justify-content: center;
     padding: 50px 0 50px 0;   
  }
- h1{
-    align-self: center;
-    font-size: 2.7em;
- }
-    .name{
-        font-size: 3em;
-        text-align: center;
-        align-self: center;
-    }
-    
+ 
     .profession{
         font-size: 30px;
    }
@@ -172,7 +208,7 @@
     }
 
 .image-container{
-    padding: 40px 0 0 0;
+    padding: 40px 0 50px 0;
 }
 .image{
     max-width: 100%;
@@ -185,7 +221,7 @@
 }
 
    section.sec3{
-        padding: 100px 5% 0px 5%;
+        padding: 50px 5% 50px 5%;
         max-width: 100%;
     }
      .button-group{
