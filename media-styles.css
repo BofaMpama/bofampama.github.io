@@ -108,16 +108,7 @@
             max-width: 100%;
             }
 
-        .services{
-            ul{
-                flex-wrap: wrap;
-
-                li{
-                    flex: 1;
-                    min-width: fit-content;
-                }
-            }
-        }    
+       
     }
 
     section.sec4{
@@ -165,7 +156,6 @@
         flex-direction: column;
     }
     form{
-        flex-direction: column;
         max-width: 100%;
      .upper{
             flex-direction: column;
