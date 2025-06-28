@@ -119,7 +119,8 @@ button.hamburger{
 }
 .sidebar-container{
     max-width: fit-content;
-    display: none;
+
+   
 }
 .sidebar{
     position: fixed;
@@ -135,17 +136,26 @@ button.hamburger{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         z-index: 101;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-top: 100px;
+    padding-top: 150px;
     color: var(--color1);  
+    transition: 0.5s;
     
     gap: 20px;
     font-family: var(--body-font);
     font-size: 28px;
     font-weight: bolder;
+
+     i{
+        color: var(--secondary);
+        font-size: 40px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
 
     li{
         list-style: none;
