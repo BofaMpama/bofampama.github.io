@@ -743,6 +743,7 @@ footer{
     color: var(--lightGrey);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 8px;
 
     .footer-logo{
@@ -753,5 +754,6 @@ footer{
     }
     p{
         text-align: center;
+        min-width: 100%;
     }
 }
