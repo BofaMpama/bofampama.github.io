@@ -50,7 +50,10 @@
     }
     section.sec1{
         flex-direction: column;
-        padding-bottom: 50px;
+        align-items: center;
+        width: 100%;
+        padding: 100px 0% 0% 0%;
+        margin-left: 0;
 
         .container{
            display: flex;
@@ -58,17 +61,15 @@
            justify-content: center;
             text-align: center;
             min-width: 100%;
-            margin-left: 0%;
             padding: 50px 0 50px 0;
 
       
         }
 
-         h1{
-    font-size: 2.7em;
- }
+  
     .name{
-        font-size: 3em;
+        font-size: 5em;
+        width: 100%;
     }
     
     }
@@ -161,7 +162,7 @@
     }
   
     section.sec1{
-        padding: 100px 0 0 0;
+        padding: 100px 5% 0 5%;
     
        
    .container{
@@ -169,7 +170,8 @@
     margin-left: 0;
     padding: 50px 0 50px 0; 
     .name{
-        font-size: 2.5em;
+        font-size: 4em;
+        line-height: 80px;
         min-width: 100%;
     }
  }
