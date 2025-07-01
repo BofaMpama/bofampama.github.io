@@ -6,6 +6,7 @@
     <title>Bofa Mpama - Software Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">  
     <link rel="stylesheet" href="media-styles.css"> 
     </head>
@@ -26,7 +27,7 @@
             <i class="menuIcon fa fa-bars" aria-hidden="true"></i>
         </button>
     </nav>
-    <section class="sec1" id="section1">
+    <section class="sec1 animateDown" id="section1">
   
         <div class="container">
             <p class="name">Bringing ideas to life through code.</p>
@@ -55,26 +56,26 @@
     </div>
   
     <section class="sec3" id="section3">
-        <div class="image-container">
+        <div class="image-container animateLeft">
             <img src="resources/boff.png" alt="">
         </div>
         
         <div class="content">
             <div class="about">
-            <p class="title">About Me</p>
-            <p class="text">I'm a Christian and a Software Developer. Show me your faith without works, and I'll show you my faith by what I do. So, yeah, when I'm coding, or writing, or really doing anything really all I'm thinking about is how I can glorify God through it. Coding is also really fun for me, especially with the right songs to listen to while working.</p>
+            <p class="title animateUp">About Me</p>
+            <p class="text animateUp">I'm a Christian and a Software Developer. Show me your faith without works, and I'll show you my faith by what I do (which in this case I guess is my portfolio). So, yeah, when I'm coding, or writing, or really doing anything really all I'm thinking about is how I can glorify God through it. Coding is also really fun for me, especially with the right songs to listen to while working.</p>
         </div>
-       <div class="services">
-                <p class="services sk-title">My services:</p>
-                <ul>
+       <div class="services animateUp">
+                <p class="services sk-title animateUp">My services:</p>
+                <ul class="animateLeft">
                     <li><img src="resources/icons/icons8-website-64.png" alt=""> Website Development</li>
                     <li><img src="resources/icons/icons8-desktop-64.png" alt=""> Desktop Applications</li>
                     <li><img src="resources/icons/icons8-wordpress.svg"> Wordpress Site Management</li>
                 </ul>
            </div>
            <div class="tools">
-                <p class="skills sk-title">Tools I use:</p>    
-                <ul>
+                <p class="skills sk-title animateUp">Tools I use:</p>    
+                <ul class="animateLeft">
                     <li><img src="resources/icons/icons8-html5-48.png" alt="" srcset=""></li>
                     <li><img src="resources/icons/icons8-css3-48.png" alt="" srcset=""></li>
                     <li><img src="resources/icons/icons8-javascript-48.png" alt="" srcset=""></li>
@@ -99,55 +100,56 @@
 
         
     </section>
+ 
+
     <section class="sec4" id="section4">
-        <h3 class="title">My Works</h3>
-        <p>There's a story behind every project; an inspiration that caused every line of code to be written.</p>
+        <h3 class="title animateUp">My Works</h3>
+        <p class="portfolio-text animateUp">There's a story behind every project; an inspiration that caused every line of code to be written.</p>
 
         <div class="card-container">
-            <div class="card">
-                <img src="resources/Project1.png" alt="">
-                <div class="card-details">
-                    <div class="card-title">Speech Recognition App</div>
-                    <div class="card-text">BOFF is a speech recognition desktop application built using the technologies listed above. Helped by the Sphinx API, this project was successfully able to recognize and execute pre-programmed speech commands.</div>
-                    <div class="card-bottom">
-                        <div class="project-details">More details &triangledown;</div>
-                        <button class="button">View Github</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img src="resources/Yada-LMS.png" alt="">
-                <div class="card-details">
-                    <div class="card-title">Yada-LMS</div>                     
-                    <div class="card-text">
-                        Yada-LMS is a library management system I built as a school project. The idea was to create a single-user system for a librarian in a library to be able to add, issue, and record the return of books to the library.  
-                    </div>
-                    <div class="card-bottom">
-                        <div class="project-details">More details</div>
-                        <button class="button">View Github</button>
-                    </div>                </div>
-            </div>
-             <div class="card">
-                <img src="resources/Video Player.png" alt="">
-                <div class="card-details">
-                    <div class="card-title">ViewPlayer</div>                  
-                    <div class="card-text">
-                        ViewPlayer is a media playing app I built to simplify video and audio playing on a PC. Striping the controls down to the bare essentials, this app gives the user a simple and intuitive user interface.                    
-                    </div>
-                    <div class="card-bottom">
-                        <div class="project-details">More details</div>
-                        <button class="button">View Github</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+   <div class="project-card animateLeft">
+  <img src="resources/Project1.png" alt="Project thumbnail" />
+  <div class="card-body">
+    <h3>Boff</h3>
+    <p>A speech recognition application built to help to aid the completion of simple tasks just by talking.</p>
+    <div class="tags">
+      <span>Java</span><span>JavaFX</span><span>SceneBuilder</span>
+    </div>
+    <a href="#" class="btn">View Project</a>
+  </div>
+</div>
+
+   <div class="project-card animateLeft">
+  <img src="resources/Video Player.png" alt="Project thumbnail" />
+  <div class="card-body">
+    <h3>ViewPlayer</h3>
+    <p>Striping the controls down to the bare essentials, this app gives the user a simple and intuitive user interface.</p>
+    <div class="tags">
+      <span>Java</span><span>JavaFX</span><span>SceneBuilder</span>
+    </div>
+    <a href="#" class="btn">View Project</a>
+  </div>
+</div>
+
+   <div class="project-card animateLeft">
+  <img src="resources/Yada-LMS.png" alt="Project thumbnail" />
+  <div class="card-body">
+    <h3>Yada LMS</h3>
+    <p>From the Hebrew word meaning "to know". This library management system aims to help users</p>
+    <div class="tags">
+      <span>Java</span><span>JavaFX</span><span>SceneBuilder</span>
+    </div>
+    <a href="#" class="btn">View Project</a>
+  </div>
+</div>
+    
             
              
     </section>
-   <section class="sec5" id="section5">
-    <p class="title-header">FAQ</p>
+   <section class="sec5 animateUp" id="section5">
+    <p class="title-header animateUp">Frequently Asked Questions</p>
 
-        <div class="accordion">
+        <div class="accordion animateDown">
             <article>
                 <input id="article1" type="radio" name="articles" checked>
                 <label for="article1">
@@ -182,19 +184,15 @@
         </div>
     </section>
     <section class="sec6" id="section6">
-        <p class="connect-title">Let's Connect</p>
-        <div class="connect-container">
-            <h3>Do You Have A Problem That Needs Solving?</h3>
-        <form action="" method="post">
-           <div class="upper">
-             <input type="text" name="name" placeholder="First Name" id="">
-            <input type="text" name="name" placeholder="Last Name" id="">
-            <input type="email" name="email" placeholder="Email" id="">
-           </div>
-            <input type="text" name="message" placeholder="Message" rows="10">
-            <button class="button-36" role="button">Submit</button>
-
-      </form>
+        <p class="connect-title animateUp">Let's Connect</p>
+        <div class="connect-container animateDown">
+            <p class="portfolio-text center">Do You Have A Problem That Needs Solving?</p>
+            <form action="" method="post" class="form">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <textarea name="" id="" placeholder="Message"></textarea>
+                <button type="submit" class="form-button">Submit</button>
+            </form>
         </div>
     </section>
     <footer>

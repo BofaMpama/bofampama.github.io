@@ -99,57 +99,32 @@
     section.sec4{
         width: 100%;
     }
-    .title-header{
-        margin-left: 10%;
-    }
     section.sec4 .card-container{        
         max-width: 100%;
         gap: 100px;
         padding: 50px 5% 50px 5%;
-    }
-    .card{
         flex-direction: column;
-   
-    .card-details{
-        width: 100%;
     }
+    .project-card img{
+        height: 200px; 
     }
-    section.sec4 .card-image{
-        max-width: 65%;
-        width: 65%;
-    }
-    .sec4 .card:nth-of-type(2){
-        flex-direction: column;
-        
-
-    .card-details{
-        width: 100%;
-    }
-    }
-    .sec4 .card-image{
-        width: 500px;
-        max-width: 100%;
-
-        img{
-            width: 100%;
-        }
-    }   
+ 
     .sec5 .accordion{
         width: 90%;
     }
     .sec6 .connect-container{
         flex-direction: column;
-    }
-    form{
-        max-width: 100%;
-     .upper{
-            flex-direction: column;
-            gap: 40px;
+
+        h3{
+            flex: 1;
         }
-        input{
-            min-width: 400px;
+        .form{
+            flex: 1;
+            width: 80%;
         }
     }
+
+   
 
 }
 @media only screen and (max-width: 600px){
@@ -162,7 +137,7 @@
     }
   
     section.sec1{
-        padding: 100px 5% 0 5%;
+        padding: 100px 5% 50px 5%;
     
        
    .container{
@@ -186,7 +161,7 @@
     min-width: 100%;
 }
 .image-container{
-    padding: 40px 0 50px 0;
+    padding: 0px 0 50px 0;
 }
 .image{
     max-width: 98%;
@@ -199,8 +174,9 @@
 }
 
    section.sec3{
-        padding: 50px 5% 50px 5%;
+        padding: 0px 5% 50px 5%;
         max-width: 100%;
+        gap: 1em;
     }
      .button-group{
         button{
@@ -245,31 +221,35 @@ section.sec4{
 section.sec5{
     padding: 50px 0 100px 0;
 }
+.title-header{
+    font-size: 3em;
+    margin-left: 0;
+    width: max-content;
+    text-align: center;
+}
 .accordion{
     padding: 20px 0 0 0;
 }
  .sec6{
-    max-width: 100%;
-        .connect-title::before{
-            width: 60px;
+        .connect-title{
+            line-height: 50px;
         }
         .connect-container{
            margin-left: 0%;
-           margin-left: 5%;
            max-width: 100%;
-           min-width: 90%;
+           min-width: 100%;
            overflow-x: hidden;
-           gap: 20px;
 
         h3{
-            font-size: 50px;
+            font-size: 2em;
             line-height: 60px;
+            text-align: center;
         }
         }
 
-        input{
-            max-width: 100%;
-        }
+       .form{
+        min-width: 90%;
+       }
     }
     footer{
         .footer-logo{
