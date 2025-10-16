@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bofa Mpama - Web Developer</title>
+    <meta
+      name="description"
+      content="I build digital tools that glorify God and empower purpose-driven ministries and businesses."
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#1e2749] text-white">
+    <section
+      class="relative flex flex-col md:flex-row items-center justify-between min-h-screen px-8 md:px-20 py-12 overflow-hidden"
+    >
+      <!-- Mobile Background Image (hidden on md and up) -->
+      <div
+        class="absolute inset-0 bg-cover bg-center brightness-[0.9] contrast-[1.1] saturate-[1.3] scale-105 md:hidden"
+        style="background-image: url('assets/boff-in-a-blue-shirt.png'); background-position: center right; background-repeat: no-repeat;"
+      ></div>
+
+      <!-- Overlay (for mobile text readability) -->
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-[#1e2749]/95 via-[#1e2749]/85 to-transparent md:hidden"
+      ></div>
+
+      <!-- Left/Text Side -->
+      <div class="relative z-10 md:w-1/2 space-y-6 text-left md:text-left top-40 md:top-0">
+        <span
+          class="inline-block border border-[#8ecae6]/50 text-[#8ecae6] rounded-full px-6 py-2 text-sm uppercase tracking-wider bg-[#8ecae6]/10 backdrop-blur-sm"
+        >
+          Software Developer
+        </span>
+
+        <h1
+          class="text-4xl md:text-6xl font-extrabold leading-tight text-[#f5ee9e]"
+        >
+          Programming with Purpose
+        </h1>
+
+        <p
+          class="text-lg md:text-xl text-[#dbe4ff]/90 leading-relaxed max-w-xl mx-auto md:mx-0"
+        >
+          I’m <span class="font-semibold text-[#8ecae6]">Bofa Mpama</span>. I
+          provide <span class="font-semibold text-[#f5ee9e]">web solutions for
+          purpose-driven clients</span> looking to make a difference in the
+          world.
+        </p>
+
+        <div class="pt-6">
+          <a
+            href="#contact"
+            class="inline-block px-8 py-3 bg-[#8ecae6] text-[#1e2749] font-semibold rounded-full hover:bg-[#f5ee9e] hover:text-[#1e2749] transition-all duration-300 shadow-lg"
+          >
+            Let’s Build Together
+          </a>
+        </div>
+      </div>
+
+      <!-- Right/Image Side (hidden on mobile) -->
+      <div
+        class="relative hidden md:flex md:w-1/2 justify-center drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)]"
+      >
+        <div
+          class="absolute -bottom-6 -right-6 w-72 h-72 md:w-96 md:h-96 bg-gradient-to-tr from-[#8ecae6]/30 via-[#f5ee9e]/40 to-transparent blur-3xl rounded-full"
+        ></div>
+
+        <img
+          src="assets/boff-in-a-blue-shirt.png"
+          alt="Bofa Mpama"
+          class="relative w-80 md:w-96 rounded-2xl object-cover z-10"
+        />
+      </div>
+
+      <!-- Decorative background for desktop -->
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#1e2749] via-[#1b2442] to-[#101626] opacity-95 -z-10"
+      ></div>
+      <div
+        class="absolute top-1/2 left-1/4 w-[700px] h-[700px] bg-[#8ecae6]/10 rounded-full blur-3xl -z-10 hidden md:block"
+      ></div>
+    </section>
+  </body>
+</html>

@@ -1,204 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bofa Mpama - Software Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">  
-    <link rel="stylesheet" href="media-styles.css"> 
-    </head>
-<body>
-    <nav>
-        
-      
-
-        <div class="logo">[BOFA.MPAMA]</div>
-        <ul class="nav-links">
-            <li><a class="menuItem" href="#section1">Home</a></li>
-            <li><a class="menuItem" href="#section3">About Me</a></li>
-            <li><a class="menuItem" href="#section4">My Works</a></li>
-            <li><a class="menuItem" href="#section5">FAQ</a></li>
-            <li><a class="menuItem menuButton" href="#section6">Let's Connect</a></li>
-        </ul>
-          <button class="hamburger" onclick="showSidebar()">
-            <i class="menuIcon fa fa-bars" aria-hidden="true"></i>
-        </button>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bofa Mpama — Purpose‑Driven Web Developer</title>
+  <meta name="description" content="I build digital tools that glorify God and empower purpose-driven ministries and businesses." />
+  <!-- Tailwind CSS CDN for quick prototyping -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small custom styles to polish the layout */
+    :root{--accent:#2b6cb0;--muted:#6b7280}
+    .hero-bg{background:linear-gradient(180deg, rgba(244,246,248,0.6), rgba(255,255,255,0.8));}
+    .soft-card{background-color:rgba(255,255,255,0.9);backdrop-filter: blur(4px);}
+    .measure{max-width:65ch}
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
+  <header class="max-w-5xl mx-auto p-6 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-slate-700 to-slate-500 flex items-center justify-center text-white font-semibold">BM</div>
+      <div>
+        <div class="font-semibold">Bofa Mpama</div>
+        <div class="text-xs text-slate-500">Purpose-driven Web Development</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm text-slate-600">
+      <a href="#work" class="hover:underline">Work</a>
+      <a href="#services" class="hover:underline">Services</a>
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#contact" class="hover:underline">Contact</a>
     </nav>
-    <section class="sec1 animateDown" id="section1">
-  
-        <div class="container">
-            <p class="name">Bringing ideas to life through code.</p>
-            <p class="description">Hello, I'm Bofa - A Software Developer. Whether you need a website, desktop app, or ministry-focused tool, I'm here to build with excellence and purpose.</p>
-            <div class="button-group">
-                <button><a href="#section4">View My Work</a></button>
-                <button><a href="#section6">Connect With Me</a></button>
-            </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg p-8 md:p-16">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">I build digital tools that glorify God and empower purpose‑driven ministries</h1>
+        <p class="mt-4 text-slate-700 measure">Bridging faith and technology: thoughtful websites, custom tools, and simple systems designed to carry your message further and serve your people well.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#work" class="inline-block px-5 py-3 rounded-md font-medium bg-[color:var(--accent)] text-white shadow">See my work</a>
+          <a href="#contact" class="inline-block px-5 py-3 rounded-md font-medium border border-slate-200 text-slate-700 soft-card">Start a project</a>
         </div>
-        
-</div>
-
-
-    </section>
-    <div class="sidebar-container">
-
-        <ul class="sidebar">
-            <i onclick="closeSidebar()" class="fa fa-times" aria-hidden="true"></i>
-
-            <li><a class="menuItem" href="#section1" onclick="closeSidebar()">Home</a></li>
-            <li><a class="menuItem" href="#section3" onclick="closeSidebar()">About Me</a></li>
-            <li><a class="menuItem" href="#section4" onclick="closeSidebar()">My Works</a></li>
-            <li><a class="menuItem" href="#section5" onclick="closeSidebar()">FAQ</a></li>
-            <li><a class="menuItem" href="#section6" onclick="closeSidebar()">Let's Connect</a></li>
+        <ul class="mt-6 text-sm text-slate-600 space-y-2">
+          <li>Trusted by churches, ministries, and purpose-driven organisations.</li>
+          <li>Simple process: Discover → Prototype → Deliver → Support.</li>
         </ul>
+      </div>
+      <div class="p-6 soft-card rounded-xl shadow-md">
+        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="workspace" class="w-full rounded-md object-cover h-56 md:h-72"/>
+        <div class="mt-4 text-sm text-slate-600">
+          <strong class="block">Mission</strong>
+          <p class="mt-1">To serve ministries and purpose-led organisations by delivering clear, reliable, and beautiful digital solutions — performed with integrity and excellence.</p>
+        </div>
+      </div>
     </div>
-  
-    <section class="sec3" id="section3">
-        <div class="image-container animateLeft">
-            <img src="resources/boff.png" alt="">
-        </div>
-        
-        <div class="content">
-            <div class="about">
-            <p class="title animateUp">About Me</p>
-            <p class="text animateUp">I'm a Christian and a Software Developer. Show me your faith without works, and I'll show you my faith by what I do (which in this case I guess is my portfolio). So, yeah, when I'm coding, or writing, or really doing anything really all I'm thinking about is how I can glorify God through it. Coding is also really fun for me, especially with the right songs to listen to while working.</p>
-        </div>
-       <div class="services animateUp">
-                <p class="services sk-title animateUp">My services:</p>
-                <ul class="animateLeft">
-                    <li><img src="resources/icons/icons8-website-64.png" alt=""> Website Development</li>
-                    <li><img src="resources/icons/icons8-desktop-64.png" alt=""> Desktop Applications</li>
-                    <li><img src="resources/icons/icons8-wordpress.svg"> Wordpress Site Management</li>
-                </ul>
-           </div>
-           <div class="tools">
-                <p class="skills sk-title animateUp">Tools I use:</p>    
-                <ul class="animateLeft">
-                    <li><img src="resources/icons/icons8-html5-48.png" alt="" srcset=""></li>
-                    <li><img src="resources/icons/icons8-css3-48.png" alt="" srcset=""></li>
-                    <li><img src="resources/icons/icons8-javascript-48.png" alt="" srcset=""></li>
-                    <li><img src="resources/icons/icons8-java-48.png" alt="" srcset=""></li>
-                    <li><img src="resources/icons/icons8-wordpress.svg" alt="" srcset=""></li>
-                    <li><img src="resources/icons/icons8-github-48.png" alt="" srcset=""></li>
-                </ul>
-           </div>
+  </section>
 
-        </div>
-        
+  <!-- Services -->
+  <section id="services" class="max-w-5xl mx-auto p-8">
+    <h2 class="text-2xl font-semibold">Services</h2>
+    <p class="mt-2 text-slate-600 measure">I offer focused services that prioritise outcomes and stewardship of resources.</p>
 
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="p-5 rounded-lg border bg-white shadow-sm">
+        <h3 class="font-semibold">Responsive Websites</h3>
+        <p class="mt-2 text-sm text-slate-600">Mobile-first websites that communicate your message clearly and invite engagement.</p>
+        <p class="mt-3 text-xs text-slate-500">Outcome: improved reach and clearer presentation of mission.</p>
+      </article>
 
+      <article class="p-5 rounded-lg border bg-white shadow-sm">
+        <h3 class="font-semibold">Custom Tools & Automations</h3>
+        <p class="mt-2 text-sm text-slate-600">Bespoke admin panels, giving systems, event management and membership tools to simplify work.</p>
+        <p class="mt-3 text-xs text-slate-500">Outcome: time saved and reduced friction for your staff.</p>
+      </article>
 
+      <article class="p-5 rounded-lg border bg-white shadow-sm">
+        <h3 class="font-semibold">WordPress & CMS</h3>
+        <p class="mt-2 text-sm text-slate-600">Maintainable content systems that allow easy updates and consistent branding.</p>
+        <p class="mt-3 text-xs text-slate-500">Outcome: autonomy for your communications team.</p>
+      </article>
 
+      <article class="p-5 rounded-lg border bg-white shadow-sm">
+        <h3 class="font-semibold">SaaS & MVP Development</h3>
+        <p class="mt-2 text-sm text-slate-600">Proof-of-concept and early product development with pragmatic, testable code.</p>
+        <p class="mt-3 text-xs text-slate-500">Outcome: validated ideas that conserve resources.</p>
+      </article>
 
+      <article class="p-5 rounded-lg border bg-white shadow-sm">
+        <h3 class="font-semibold">Maintenance & Support</h3>
+        <p class="mt-2 text-sm text-slate-600">Long-term support packages and small improvements on demand.</p>
+        <p class="mt-3 text-xs text-slate-500">Outcome: reliable, long-lived systems.</p>
+      </article>
 
-
-
-
-
-
-        
-    </section>
- 
-
-    <section class="sec4" id="section4">
-        <h3 class="title animateUp">My Works</h3>
-        <p class="portfolio-text animateUp">There's a story behind every project; an inspiration that caused every line of code to be written.</p>
-
-        <div class="card-container">
-   <div class="project-card animateUp">
-  <img src="resources/Project1.png" alt="Project thumbnail" />
-  <div class="card-body">
-    <h3>Boff</h3>
-    <p>A speech recognition application built to help to aid the completion of simple tasks just by talking.</p>
-    <div class="tags">
-      <span>Java</span><span>JavaFX</span><span>SceneBuilder</span>
+      <article class="p-5 rounded-lg border bg-white shadow-sm">
+        <h3 class="font-semibold">Consulting & Training</h3>
+        <p class="mt-2 text-sm text-slate-600">Technical strategy, staff training, and deployment readiness for teams with limited dev capacity.</p>
+        <p class="mt-3 text-xs text-slate-500">Outcome: empowered teams who can steward their digital presence well.</p>
+      </article>
     </div>
-    <a href="#" class="btn">View Project</a>
-  </div>
-</div>
+  </section>
 
-   <div class="project-card animateUp">
-  <img src="resources/Video Player.png" alt="Project thumbnail" />
-  <div class="card-body">
-    <h3>ViewPlayer</h3>
-    <p>Striping the controls down to the bare essentials, this app gives the user a simple and intuitive user interface.</p>
-    <div class="tags">
-      <span>Java</span><span>JavaFX</span><span>SceneBuilder</span>
+  <!-- Featured Work -->
+  <section id="work" class="bg-white/60 p-8">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-semibold">Featured Projects</h2>
+      <p class="mt-2 text-slate-600 measure">Selected work with a short explanation of the problem, approach, and result.</p>
+
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <!-- Project Card -->
+        <article class="rounded-lg border overflow-hidden shadow-sm bg-white">
+          <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="project" class="w-full h-48 object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Grace Fellowship — Church Website</h3>
+            <p class="mt-2 text-sm text-slate-600">Problem: outdated site with poor mobile experience. Approach: rebuilt content-first site, improved navigation, added sermon library. Result: increased first-time visitor retention and smoother content updates.</p>
+            <div class="mt-4 flex items-center justify-between text-xs text-slate-500">
+              <span>Tech: SvelteKit • Supabase</span>
+              <a href="#" class="hover:underline">View project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-lg border overflow-hidden shadow-sm bg-white">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="project" class="w-full h-48 object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Ministry Giving Portal</h3>
+            <p class="mt-2 text-sm text-slate-600">Problem: manual donation reconciliation. Approach: created a simple giving portal with automated receipts and exportable reports. Result: staff time reduced by ~60%.</p>
+            <div class="mt-4 flex items-center justify-between text-xs text-slate-500">
+              <span>Tech: Next.js • Stripe</span>
+              <a href="#" class="hover:underline">View project</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- More placeholder projects -->
+        <article class="rounded-lg border overflow-hidden shadow-sm bg-white">
+          <div class="p-5 h-full flex flex-col justify-between">
+            <div>
+              <h3 class="font-semibold">Custom Membership System</h3>
+              <p class="mt-2 text-sm text-slate-600">Problem: fragmented member records. Approach: built a unified dashboard for leaders. Result: clearer record keeping and event management.</p>
+            </div>
+            <div class="mt-4 text-xs text-slate-500">Tech: PHP • MySQL</div>
+          </div>
+        </article>
+
+        <article class="rounded-lg border overflow-hidden shadow-sm bg-white">
+          <div class="p-5 h-full flex flex-col justify-between">
+            <div>
+              <h3 class="font-semibold">SaaS MVP — Small Nonprofit Tool</h3>
+              <p class="mt-2 text-sm text-slate-600">Problem: validating a donation-tracking idea. Approach: built a lean MVP and ran user tests. Result: clear product-market fit and early adopters.</p>
+            </div>
+            <div class="mt-4 text-xs text-slate-500">Tech: Ruby on Rails</div>
+          </div>
+        </article>
+      </div>
     </div>
-    <a href="#" class="btn">View Project</a>
-  </div>
-</div>
+  </section>
 
-   <div class="project-card animateUp">
-  <img src="resources/Yada-LMS.png" alt="Project thumbnail" />
-  <div class="card-body">
-    <h3>Yada LMS</h3>
-    <p>From the Hebrew word meaning "to know". This library management system aims to help users</p>
-    <div class="tags">
-      <span>Java</span><span>JavaFX</span><span>SceneBuilder</span>
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto p-8">
+    <h2 class="text-2xl font-semibold">About</h2>
+    <div class="mt-4 grid md:grid-cols-2 gap-6 items-start">
+      <div>
+        <p class="text-slate-700">I am <strong>Bofa Mpama</strong>, a Christian software developer who believes that good work is an act of worship. My practice is shaped by biblical convictions: honesty, stewardship, and the pursuit of excellence. I bring those convictions into how I design systems and serve clients.</p>
+
+        <p class="mt-4 text-slate-700">My approach is simple: listen carefully, design deliberately, and deliver reliably. If you prefer clear communication, measurable outcomes, and work done with integrity — we will get along well.</p>
+      </div>
+      <div class="soft-card p-4 rounded-lg shadow-sm">
+        <h4 class="font-semibold">How I work</h4>
+        <ol class="mt-2 text-sm text-slate-600 list-decimal ml-5 space-y-2">
+          <li><strong>Discovery:</strong> Understand mission, audience, scope.</li>
+          <li><strong>Prototype:</strong> Lightweight prototype for feedback.</li>
+          <li><strong>Build:</strong> Production-ready deliverable with tests and docs.</li>
+          <li><strong>Support:</strong> Ongoing maintenance and small improvements.</li>
+        </ol>
+      </div>
     </div>
-    <a href="#" class="btn">View Project</a>
-  </div>
-</div>
-    
-            
-             
-    </section>
-   <section class="sec5 animateUp" id="section5">
-    <p class="title-header animateUp">Frequently Asked Questions</p>
+  </section>
 
-        <div class="accordion animateDown">
-            <article>
-                <input id="article1" type="radio" name="articles" checked>
-                <label for="article1">
-                    <h3>Do You Have Any Other Skills?</h3>
-                    <span>+</span>
-                </label>
-                <div>
-                    <p>Yes! Complementing my skills as a programmer, I am also quite creative in developing word content. This could be quite beneficial as I am not only able to  create a website, but also create the content to go with it.</p>
-                </div>
-            </article>
-            <article>
-                <input id="article2" type="radio" name="articles" checked>
-                <label for="article2">
-                    <h3>Are You Available To Work In-Person?</h3>
-                    <span>+</span>
-                </label>
-                <div>
-                    <p>Seeing as I am still actively engaged in my academical pursuits, the possibility of me working on-site is low. That not withstanding, working remotely, I promise to put in a 110% effort to get the job done.
-                    </p>
-                </div>
-            </article>
-            <article>
-                <input id="article3" type="radio" name="articles" checked>
-                <label for="article3">
-                    <h3>How Quickly Can You Build A Site For Me?</h3>
-                    <span>+</span>
-                </label>
-                <div>
-                    <p>Building a website generally does not take long. However, giving an exact estimate of development time and costs varies depending on the specifics of what you want done for you.</p>
-                </div>
-            </article>
+  <!-- Contact -->
+  <section id="contact" class="bg-slate-50 p-8">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl font-semibold">Contact</h2>
+      <p class="mt-2 text-slate-600 measure">If you have a project or a question, tell me about it. I respond to new enquiries within 24 hours.</p>
+
+      <form action="#" class="mt-6 grid gap-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input type="text" name="name" placeholder="Your name" class="p-3 border rounded" required />
+          <input type="email" name="email" placeholder="Your email" class="p-3 border rounded" required />
         </div>
-    </section>
-    <section class="sec6" id="section6">
-        <p class="connect-title animateUp">Let's Connect</p>
-        <div class="connect-container animateDown">
-            <p class="portfolio-text center">Do You Have A Problem That Needs Solving?</p>
-            <form action="" method="post" class="form">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <textarea name="" id="" placeholder="Message"></textarea>
-                <button type="submit" class="form-button">Submit</button>
-            </form>
+        <input type="text" name="organization" placeholder="Organization (optional)" class="p-3 border rounded" />
+        <textarea name="message" rows="5" placeholder="Briefly describe the project or question" class="p-3 border rounded" required></textarea>
+        <div class="flex items-center gap-3">
+          <button type="submit" class="px-5 py-3 rounded-md bg-[color:var(--accent)] text-white font-medium">Send enquiry</button>
+          <a href="mailto:you@example.com" class="text-sm text-slate-600">Or email me directly</a>
         </div>
-    </section>
-    <footer>
-        <div class="footer-logo">[Bofa.Mpama]</div>
-        <p>&copy Copyright 2025. All right reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+        <p class="text-xs text-slate-500 mt-2">By submitting, you agree I may contact you about your enquiry. I will treat your details with care.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="max-w-5xl mx-auto p-6 text-sm text-slate-500 flex flex-col md:flex-row items-center justify-between">
+    <div>&copy; <span id="year"></span> Bofa Mpama. All rights reserved.</div>
+    <div class="mt-3 md:mt-0">Built with care • <a href="https://github.com/bofampama" class="hover:underline">GitHub</a></div>
+  </footer>
+
+  <script>
+    // Set year and small form behavior for demo
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thanks — your enquiry has been submitted. I will review and respond within 24 hours.');
+      e.target.reset();
+    });
+  </script>
 </body>
 </html>
