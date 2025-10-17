@@ -6,6 +6,8 @@
     <title>Bofa Mpama | Web Developer Portfolio</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Use Inter font family -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
@@ -21,7 +23,8 @@
         }
         /* Custom styles for social icons to make them look like buttons/initials */
         .social-icon {
-            @apply w-10 h-10 flex items-center justify-center rounded-full bg-secondary-dark border border-accent/20 text-accent text-sm font-bold transition duration-150 hover:bg-accent hover:text-primary-dark;
+            /* Now uses fa-brands icons */
+            @apply w-10 h-10 flex items-center justify-center rounded-full bg-secondary-dark border border-accent/20 text-accent text-xl transition duration-150 hover:bg-accent hover:text-primary-dark;
         }
         .section-padding {
             padding-top: 5rem;
@@ -50,6 +53,16 @@
 
         // --- JS LOGIC ---
 
+        // Function to toggle the mobile navigation menu visibility
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu) {
+                mobileMenu.classList.toggle('hidden');
+            }
+        }
+        window.toggleMobileMenu = toggleMobileMenu;
+
+
         // Simple function for scroll-to-section navigation
         function scrollToSection(id) {
             const element = document.getElementById(id);
@@ -58,8 +71,19 @@
             }
         }
 
-        // Expose function globally for use in HTML
+        // Combined function for navigation link clicks (scrolls and closes menu)
+        function handleNavClick(id) {
+            scrollToSection(id);
+            // Check if the menu is open and close it after scrolling
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                toggleMobileMenu();
+            }
+        }
+
+        // Expose functions globally for use in HTML
         window.scrollToSection = scrollToSection;
+        window.handleNavClick = handleNavClick;
 
         // Function for retry with exponential backoff (Placeholder for production API calls)
         async function fetchWithRetry(url, options, retries = 3) {
@@ -132,19 +156,45 @@
 </head>
 <body>
 
-    <!-- Header & Navigation -->
+    <!-- Header & Navigation (UPDATED FOR MOBILE TOGGLE AND SOCIAL ICONS) -->
     <header class="sticky top-0 z-50 bg-primary-dark/95 backdrop-blur-sm border-b border-secondary-dark">
         <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center py-5">
             <div class="text-xl font-extrabold tracking-widest text-text-default">Bofa Mpama</div>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#about" onclick="scrollToSection('about')" class="text-light hover:text-accent transition duration-150">About</a>
-                <a href="#services" onclick="scrollToSection('services')" class="text-light hover:text-accent transition duration-150">Services</a>
-                <a href="#work" onclick="scrollToSection('work')" class="text-light hover:text-accent transition duration-150">Work</a>
-                <a href="#contact" onclick="scrollToSection('contact')" class="text-light hover:text-accent transition duration-150">Contact</a>
-            </nav>
-            <button class="md:hidden text-2xl" aria-label="Menu">
+            
+            <!-- Desktop Nav and Social Icons -->
+            <div class="hidden md:flex items-center space-x-8">
+                <nav class="space-x-8">
+                    <a href="#about" onclick="scrollToSection('about')" class="text-light hover:text-accent transition duration-150">About</a>
+                    <a href="#services" onclick="scrollToSection('services')" class="text-light hover:text-accent transition duration-150">Services</a>
+                    <a href="#work" onclick="scrollToSection('work')" class="text-light hover:text-accent transition duration-150">Work</a>
+                    <a href="#contact" onclick="scrollToSection('contact')" class="text-light hover:text-accent transition duration-150">Contact</a>
+                </nav>
+                <!-- Social Icons integrated into desktop header -->
+                <div class="flex space-x-2 text-xl">
+                    <a href="https://linkedin.com/in/bofampama" target="_blank" class="social-icon" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/bofampama" target="_blank" class="social-icon" aria-label="Github Profile"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-2xl text-text-default hover:text-accent" aria-label="Menu" onclick="toggleMobileMenu()">
                 &#9776;
             </button>
+        </div>
+
+        <!-- Mobile Menu Container (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary-dark/95 border-t border-accent/20">
+            <nav class="flex flex-col space-y-4 p-6 text-lg">
+                <a href="#about" onclick="handleNavClick('about')" class="text-text-default hover:text-accent transition duration-150 border-b border-secondary-dark/50 pb-2">About</a>
+                <a href="#services" onclick="handleNavClick('services')" class="text-text-default hover:text-accent transition duration-150 border-b border-secondary-dark/50 pb-2">Services</a>
+                <a href="#work" onclick="handleNavClick('work')" class="text-text-default hover:text-accent transition duration-150 border-b border-secondary-dark/50 pb-2">Work</a>
+                <a href="#contact" onclick="handleNavClick('contact')" class="text-text-default hover:text-accent transition duration-150 pb-2">Contact</a>
+            </nav>
+            <div class="flex justify-center space-x-4 p-4 border-t border-accent/20">
+                 <!-- Social Icons for mobile -->
+                <a href="https://linkedin.com/in/bofampama" target="_blank" class="social-icon" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/bofampama" target="_blank" class="social-icon" aria-label="Github Profile"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
     </header>
 
@@ -164,13 +214,7 @@
                     <button onclick="scrollToSection('work')" class="px-8 py-3 bg-accent text-primary-dark font-bold rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
                         VIEW PROJECTS
                     </button>
-                    <!-- Social Icons -->
-                    <div class="flex space-x-2 text-xl">
-                        <a href="https://linkedin.com/in/bofampama" target="_blank" class="social-icon" aria-label="LinkedIn Profile">In</a>
-                        <a href="https://github.com/bofampama" target="_blank" class="social-icon" aria-label="Github Profile">G</a>
-                        <a href="#" class="social-icon" aria-label="X (Twitter) Profile">X</a>
-                        <a href="#" class="social-icon" aria-label="Dribbble Profile">D</a>
-                    </div>
+                    <!-- Social Icons (Removed from Hero since they are now in the header) -->
                 </div>
             </div>
 
@@ -292,11 +336,11 @@
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
-                    <div class="lg:order-1 rounded-lg overflow-hidden h-64 md:h-96 w-full shadow-lg">
+                    <div class="lg:order-1 rounded-lg overflow-hidden h-64 md:h-96 w-full shadow-lg bg-primary-dark flex items-center justify-center">
                          <!-- Placeholder for project image -->
-                        <img src="https://placehold.co/600x400/363636/f0f0f0?text=Christ+and+Code+Platform" 
+                        <img src="resources/c.a.c.png" 
                              alt="Christ and Code Learning Platform Screenshot" 
-                             class="w-full h-full object-cover transition duration-500 hover:scale-105"
+                             class="w-full h-full object-contain transition duration-500 hover:scale-105"
                         >
                     </div>
                 </div>
@@ -314,11 +358,11 @@
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
-                    <div class="rounded-lg overflow-hidden h-64 md:h-96 w-full shadow-lg">
-                        <!-- Placeholder for project image -->
-                        <img src="https://placehold.co/600x400/363636/f0f0f0?text=House+of+Kratos+Portal" 
-                             alt="House of Kratos Portal Screenshot" 
-                             class="w-full h-full object-cover transition duration-500 hover:scale-105"
+                     <div class="lg:order-1 rounded-lg overflow-hidden h-64 md:h-96 w-full shadow-lg bg-primary-dark flex items-center justify-center">
+                         <!-- Placeholder for project image -->
+                        <img src="resources/h.o.k.png" 
+                             alt="Christ and Code Learning Platform Screenshot" 
+                             class="w-full h-full object-contain transition duration-500 hover:scale-105"
                         >
                     </div>
                 </div>
@@ -336,11 +380,11 @@
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
-                    <div class="lg:order-1 rounded-lg overflow-hidden h-64 md:h-96 w-full shadow-lg">
+                    <div class="lg:order-1 rounded-lg overflow-hidden h-64 md:h-96 w-full shadow-lg bg-primary-dark flex items-center justify-center">
                          <!-- Placeholder for project image -->
-                        <img src="https://placehold.co/600x400/363636/f0f0f0?text=Petrobara+Data+Viz" 
-                             alt="Petrobara Dashboard Screenshot" 
-                             class="w-full h-full object-cover transition duration-500 hover:scale-105"
+                        <img src="resources/petrobara.png" 
+                             alt="Christ and Code Learning Platform Screenshot" 
+                             class="w-full h-full object-contain transition duration-500 hover:scale-105"
                         >
                     </div>
                 </div>
@@ -358,14 +402,13 @@
                             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
-                    <div class="rounded-lg overflow-hidden h-64 md:h-96 w-full shadow-lg">
-                        <!-- Placeholder for project image -->
-                        <img src="https://placehold.co/600x400/363636/f0f0f0?text=Soferbox+Archiver" 
-                             alt="Soferbox Archiver Screenshot" 
-                             class="w-full h-full object-cover transition duration-500 hover:scale-105"
+                    <div class="lg:order-1 rounded-lg overflow-hidden h-64 md:h-96 w-full shadow-lg bg-primary-dark flex items-center justify-center">
+                         <!-- Placeholder for project image -->
+                        <img src="resources/soferbox.png" 
+                             alt="Christ and Code Learning Platform Screenshot" 
+                             class="w-full h-full object-contain transition duration-500 hover:scale-105"
                         >
                     </div>
-                </div>
             </div>
             
             <div class="text-center mt-16">
@@ -433,7 +476,7 @@
     <!-- Footer -->
     <footer class="bg-secondary-dark mt-16 py-8">
         <div class="container mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center text-light text-sm">
-            <p>&copy; 2024 Bofa Mpama. All Rights Reserved.</p>
+            <p>&copy; 2025 Bofa Mpama. All Rights Reserved.</p>
             <div class="flex space-x-4 mt-4 md:mt-0">
                 <a href="https://linkedin.com/in/bofampama" target="_blank" class="hover:text-accent">LinkedIn</a>
                 <a href="#about" onclick="scrollToSection('about')" class="hover:text-accent">About</a>
