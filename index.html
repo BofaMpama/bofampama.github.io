@@ -6,6 +6,8 @@
     <title>Bofa Mpama | Web Developer Portfolio</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load AOS for scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Load Font Awesome for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Use Inter font family -->
@@ -201,7 +203,7 @@
     <main class="container mx-auto px-6 lg:px-12">
         
         <!-- Hero Section - Redesigned to be centered and image-aligned -->
-        <section id="hero" class="pt-24 pb-12 md:pt-32 md:pb-16 text-left min-h-screen flex items-left justify-center">
+        <section data-aos="fade-up" id="hero" class="pt-24 pb-12 md:pt-32 md:pb-16 text-left min-h-screen flex items-left justify-center">
             <div class="max-w-FULL space-y-6 z-10 relative">
                 <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
                     I <span class="text-accent">build web solutions</span> for purpose-driven clients
@@ -224,10 +226,10 @@
         <section id="about" class="section-padding grid lg:grid-cols-2 gap-12 lg:gap-24 items-start border-t border-secondary-dark">
             <!-- Left Text Block (Main Summary) -->
             <div class="lg:col-span-1 space-y-6">
-                <h2 class="text-3xl sm:text-4xl font-extrabold">
+                <h2 data-aos="fade-down" class="text-3xl sm:text-4xl font-extrabold">
                     My approach is driven by purpose and principle.
                 </h2>
-                <p class="text-xl text-light">
+                <p data-aos="fade-down" class="text-xl text-light">
                     I'm passionate about technology, but beyond that passion lies a deep sense of purpose. Everything I do is guided by biblical principles and a desire to glorify God through excellence, integrity, and service.
                 </p>
             </div>
@@ -235,14 +237,14 @@
             <!-- Right Text Blocks (Detailed Philosophy) -->
             <div class="lg:col-span-1 grid gap-8">
                 <!-- Philosophy Card 1 -->
-                <div class="p-6 bg-secondary-dark rounded-xl shadow-inner border border-accent/10">
+                <div data-aos="fade-left" class="p-6 bg-secondary-dark rounded-xl shadow-inner border border-accent/10">
                     <h3 class="text-2xl font-semibold mb-3 text-accent">Purpose-Driven Solutions</h3>
                     <p class="text-light">
                         I specialize in providing purpose-driven web solutions — crafting websites and digital systems that not only look good but also serve meaningful missions. My commitment is to create powerful and ethical digital presences.
                     </p>
                 </div>
                 <!-- Philosophy Card 2 -->
-                <div class="p-6 bg-secondary-dark rounded-xl shadow-inner border border-accent/10">
+                <div data-aos="fade-left" class="p-6 bg-secondary-dark rounded-xl shadow-inner border border-accent/10">
                     <h3 class="text-2xl font-semibold mb-3 text-accent">Partnership in Vision</h3>
                     <p class="text-light">
                         My goal is to partner with individuals and organizations who value purpose as much as performance. I take time to understand the heart behind each project, so that together, we can create digital solutions that truly reflect your vision and values.
@@ -258,7 +260,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 
                 <!-- Service 1: Web Development -->
-                <div class="p-6 bg-secondary-dark rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl h-full flex flex-col border border-accent/10 hover:border-accent">
+                <div data-aos="zoom-in" class="p-6 bg-secondary-dark rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl h-full flex flex-col border border-accent/10 hover:border-accent">
                     <div class="text-accent mb-4">
                         <!-- Icon: Code -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
@@ -270,7 +272,7 @@
                 </div>
 
                 <!-- Service 2: Website Management -->
-                <div class="p-6 bg-secondary-dark rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl h-full flex flex-col border border-accent/10 hover:border-accent">
+                <div data-aos="zoom-in" class="p-6 bg-secondary-dark rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl h-full flex flex-col border border-accent/10 hover:border-accent">
                     <div class="text-accent mb-4">
                         <!-- Icon: Settings/Maintenance -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path><circle cx="12" cy="12" r="3"></circle></svg>
@@ -282,7 +284,7 @@
                 </div>
 
                 <!-- Service 3: UX/UI Design -->
-                <div class="p-6 bg-secondary-dark rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl h-full flex flex-col border border-accent/10 hover:border-accent">
+                <div data-aos="zoom-in" class="p-6 bg-secondary-dark rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl h-full flex flex-col border border-accent/10 hover:border-accent">
                     <div class="text-accent mb-4">
                         <!-- Icon: Pen Tool/Design -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20l4-4 4-4 0 0 -8-8 -8 8 4 4 4 4z"></path><path d="M12 20v-8l-4 4 8 8 4-4 4-4z"></path><path d="M12 20l-4-4"></path><path d="M12 12l-4 4"></path></svg>
@@ -294,7 +296,7 @@
                 </div>
 
                 <!-- Service 4: Digital Strategy -->
-                <div class="p-6 bg-secondary-dark rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl h-full flex flex-col border border-accent/10 hover:border-accent">
+                <div data-aos="zoom-in" class="p-6 bg-secondary-dark rounded-xl shadow-lg transition duration-300 ease-in-out hover:shadow-2xl h-full flex flex-col border border-accent/10 hover:border-accent">
                     <div class="text-accent mb-4">
                         <!-- Icon: Target/Strategy -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
@@ -314,7 +316,7 @@
             <div class="grid gap-16">
                 
                 <!-- Project 1: Christ and Code -->
-                <div class="bg-secondary-dark rounded-xl p-6 md:p-12 shadow-2xl grid lg:grid-cols-2 gap-8 items-center border border-accent/10">
+                <div data-aos="zoom-out-up" class="bg-secondary-dark rounded-xl p-6 md:p-12 shadow-2xl grid lg:grid-cols-2 gap-8 items-center border border-accent/10">
                     <div class="space-y-4 lg:order-2">
                         <span class="text-accent uppercase text-sm tracking-widest font-semibold">Faith-Based Media / Community</span>
                         <h3 class="text-3xl font-bold">Christ & Code Learning</h3>
@@ -336,7 +338,7 @@
                 </div>
 
                 <!-- Project 2: House of Kratos -->
-                <div class="bg-secondary-dark rounded-xl p-6 md:p-12 shadow-2xl grid lg:grid-cols-2 gap-8 items-center border border-accent/10">
+                <div data-aos="zoom-out-down" class="bg-secondary-dark rounded-xl p-6 md:p-12 shadow-2xl grid lg:grid-cols-2 gap-8 items-center border border-accent/10">
                     <div class="space-y-4">
                         <span class="text-accent uppercase text-sm tracking-widest font-semibold">Leadership Coaching / Membership</span>
                         <h3 class="text-3xl font-bold">House of Kratos</h3>
@@ -358,7 +360,7 @@
                 </div>
                 
                 <!-- Project 3: Petrobara -->
-                <div class="bg-secondary-dark rounded-xl p-6 md:p-12 shadow-2xl grid lg:grid-cols-2 gap-8 items-center border border-accent/10">
+                <div data-aos="zoom-out-right" class="bg-secondary-dark rounded-xl p-6 md:p-12 shadow-2xl grid lg:grid-cols-2 gap-8 items-center border border-accent/10">
                     <div class="space-y-4 lg:order-2">
                         <span class="text-accent uppercase text-sm tracking-widest font-semibold">Energy / Sustainability Reporting</span>
                         <h3 class="text-3xl font-bold">Petrobara LTD.</h3>
@@ -380,7 +382,7 @@
                 </div>
 
                 <!-- Project 4: Soferbox -->
-                <div class="bg-secondary-dark rounded-xl p-6 md:p-12 shadow-2xl grid lg:grid-cols-2 gap-8 items-center border border-accent/10">
+                <div data-aos="zoom-out-left" class="bg-secondary-dark rounded-xl p-6 md:p-12 shadow-2xl grid lg:grid-cols-2 gap-8 items-center border border-accent/10">
                     <div class="space-y-4">
                         <span class="text-accent uppercase text-sm tracking-widest font-semibold">Content Management / Archival</span>
                         <h3 class="text-3xl font-bold">Soferbox Digital Archiver</h3>
