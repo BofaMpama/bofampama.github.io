@@ -6,8 +6,9 @@
     <title>Bofa Mpama | Web Developer Portfolio</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load AOS for scroll animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- AOS Animation CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <!-- Load Font Awesome for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Use Inter font family -->
@@ -156,7 +157,7 @@
         }
     </script>
 </head>
-<body>
+<body style="overflow-x: hidden;">
 
     <!-- Header & Navigation (UPDATED FOR MOBILE TOGGLE AND SOCIAL ICONS) -->
     <header class="sticky top-0 z-50 bg-primary-dark/95 backdrop-blur-sm border-b border-secondary-dark">
@@ -192,7 +193,7 @@
                 <a href="#work" onclick="handleNavClick('work')" class="text-text-default hover:text-accent transition duration-150 border-b border-secondary-dark/50 pb-2">Work</a>
                 <a href="#contact" onclick="handleNavClick('contact')" class="text-text-default hover:text-accent transition duration-150 pb-2">Contact</a>
             </nav>
-            <div class="flex justify-center gap-[20px] space-x-4 p-4 border-t border-accent/20">
+            <div class="flex justify-left gap-[20px] space-x-4 p-4 pl-6 border-t border-accent/20">
                  <!-- Social Icons for mobile -->
                 <a href="https://linkedin.com/in/bofampama" target="_blank" class="social-icon" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/bofampama" target="_blank" class="social-icon" aria-label="Github Profile"><i class="fa-brands fa-github"></i></a>
@@ -481,5 +482,13 @@
         </div>
     </footer>
 
+    <!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration (in ms)
+    once: true,     // animate only once per scroll
+  });
+</script>
 </body>
 </html>
