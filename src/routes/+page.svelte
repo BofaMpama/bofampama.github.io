@@ -42,7 +42,7 @@
 <div class="relative group">
 <div class="absolute -inset-4 bg-primary/20 border-2 border-primary neo-shadow opacity-50 group-hover:opacity-100 transition-opacity"></div>
 <div class="relative w-full aspect-square bg-white overflow-hidden border-4 border-white neo-shadow-blue">
-<img alt="Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Modern high contrast portrait of Bofa Mpama" src="boff.png"/>
+<img alt="Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Modern high contrast portrait of Bofa Mpama" src="image.png"/>
 </div>
 </div>
 </div>
