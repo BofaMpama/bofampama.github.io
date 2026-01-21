@@ -47,11 +47,13 @@
 </div>
 </div>
 <!-- Scroll Indicator -->
+ <a href="#projects" aria-label="Scroll to Projects Section">
 <div class="flex justify-center mt-20">
 <div class="animate-bounce border-2 border-white p-2">
 <span class="material-symbols-outlined">expand_more</span>
 </div>
 </div>
+</a>
 </section>
 
 <Projects />
