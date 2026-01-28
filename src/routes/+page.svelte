@@ -22,7 +22,7 @@
                             Bofa <br/> Mpama
                         </h1>
 <h2 class="text-2xl md:text-3xl font-bold text-primary italic">
-                            Web Developer &amp; Video Editor
+                            Web Developer <span class="hidden">&amp; Video </span>Editor
                         </h2>
 <p class="text-lg md:text-xl text-white/70 max-w-[500px] font-medium leading-relaxed">
                             I build web solutions for purpose-driven clients who want to make a bold impact online.
@@ -35,7 +35,7 @@
                         </button></a>
 <div class="hidden flex items-center gap-4 px-6 border-2 border-white/20 neo-shadow bg-background-dark/50">
 <span class="material-symbols-outlined text-primary">play_circle</span>
-<span class="font-bold uppercase text-sm">Showreel 2024</span>
+<span class="font-bold uppercase text-sm">Download CV</span>
 </div>
 </div>
 </div>

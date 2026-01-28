@@ -1,7 +1,6 @@
 
-
-<!-- Mobile Navigation Logic -->
-<script>
+<!-- Mobile Navigation Logic (SAFE) -->
+<script defer>
   const menuBtn = document.getElementById('menu-btn');
   const menuIcon = document.getElementById('menu-icon');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -14,7 +13,6 @@
 
     mobileMenu.classList.toggle('hidden');
     document.body.classList.toggle('overflow-hidden');
-
     menuIcon.textContent = isOpen ? 'close' : 'menu';
   });
 
@@ -27,6 +25,7 @@
     });
   });
 </script>
+
 
 <header class="fixed top-0 left-0 right-0 z-[100] bg-background-dark/80 backdrop-blur-sm border-b-2 border-white/10">
   <div class="max-w-[1200px] mx-auto flex items-center justify-between px-6 py-4">
