@@ -7,12 +7,7 @@ const config = {
       pages: 'build',
       assets: 'build',
       fallback: 'index.html'
-    }),
-
-    paths: {
-      base: process.env.NODE_ENV === 'production' ? '/bofampama' : ''
-      // ⚠️ DO NOT set `assets` unless you have a full CDN URL
-    }
+    })
   }
 };
 
