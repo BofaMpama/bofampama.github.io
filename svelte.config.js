@@ -1,9 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/kit/vite';
 
-export default {
-  preprocess: vitePreprocess(),
-
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
   kit: {
     adapter: adapter({
       pages: 'build',
@@ -12,8 +10,10 @@ export default {
     }),
 
     paths: {
-      base: '/bofampama',
-      assets: '/bofampama'
+      base: process.env.NODE_ENV === 'production' ? '/bofampama' : '',
+      assets: process.env.NODE_ENV === 'production' ? '/bofampama' : ''
     }
   }
 };
+
+export default config;

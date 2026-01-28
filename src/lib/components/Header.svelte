@@ -1,30 +1,41 @@
+<script>
+  import { onMount } from 'svelte';
 
-<!-- Mobile Navigation Logic (SAFE) -->
-<script defer>
-  const menuBtn = document.getElementById('menu-btn');
-  const menuIcon = document.getElementById('menu-icon');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const mobileLinks = document.querySelectorAll('.mobile-link');
+  let menuBtn;
+  let menuIcon;
+  let mobileMenu;
+  let mobileLinks = [];
 
   let isOpen = false;
 
-  menuBtn.addEventListener('click', () => {
-    isOpen = !isOpen;
+  onMount(() => {
+    menuBtn = document.getElementById('menu-btn');
+    menuIcon = document.getElementById('menu-icon');
+    mobileMenu = document.getElementById('mobile-menu');
+    mobileLinks = document.querySelectorAll('.mobile-link');
 
+    menuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  });
+
+  function toggleMenu() {
+    isOpen = !isOpen;
     mobileMenu.classList.toggle('hidden');
     document.body.classList.toggle('overflow-hidden');
     menuIcon.textContent = isOpen ? 'close' : 'menu';
-  });
+  }
 
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-      document.body.classList.remove('overflow-hidden');
-      menuIcon.textContent = 'menu';
-      isOpen = false;
-    });
-  });
+  function closeMenu() {
+    mobileMenu.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+    menuIcon.textContent = 'menu';
+    isOpen = false;
+  }
 </script>
+
 
 
 <header class="fixed top-0 left-0 right-0 z-[100] bg-background-dark/80 backdrop-blur-sm border-b-2 border-white/10">

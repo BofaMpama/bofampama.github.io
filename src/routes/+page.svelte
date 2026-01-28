@@ -22,7 +22,8 @@
                             Bofa <br/> Mpama
                         </h1>
 <h2 class="text-2xl md:text-3xl font-bold text-primary italic">
-                            Web Developer <span class="hidden">&amp; Video </span>Editor
+                            Web Developer & WordPress Site Manager
+                        
                         </h2>
 <p class="text-lg md:text-xl text-white/70 max-w-[500px] font-medium leading-relaxed">
                             I build web solutions for purpose-driven clients who want to make a bold impact online.
